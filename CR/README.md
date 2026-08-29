@@ -61,9 +61,9 @@ The CR is the bridge between the ADR (architectural decision) and the Implementa
 
 ## Related Documents
 
-- [GOVERNANCE/CHANGE-CONTROL-LIFECYCLE.md](../GOVERNANCE/CHANGE-CONTROL-LIFECYCLE.md) — The 8-stage lifecycle
-- [GOVERNANCE/SEMANTIC-STATUS-MODEL.md](../GOVERNANCE/SEMANTIC-STATUS-MODEL.md) — The 6-stage status model
-- [templates/CR-TEMPLATE.md](../templates/CR-TEMPLATE.md) — Template for new CRs
+- [GOVERNANCE/CHANGE-CONTROL-LIFECYCLE.md](../GOVERNANCE/CHANGE-CONTROL-LIFECYCLE.md) : The 8-stage lifecycle
+- [GOVERNANCE/SEMANTIC-STATUS-MODEL.md](../GOVERNANCE/SEMANTIC-STATUS-MODEL.md) : The 6-stage status model
+- [templates/CR-TEMPLATE.md](../templates/CR-TEMPLATE.md) : Template for new CRs
 
 ---
 

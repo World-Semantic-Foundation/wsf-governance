@@ -86,7 +86,7 @@ Downstream contexts may specialize the artifact for their domain. Specialization
 
 ### 8. Instantiate
 
-Concrete instances are created — entities, events, states, assertions that reference the semantic concepts.
+Concrete instances are created ; entities, events, states, assertions that reference the semantic concepts.
 
 **Output:** Entity instances and assertions in example/modeling repositories.
 
@@ -98,7 +98,7 @@ Claims about the world are made as semantic assertions. Each assertion carries s
 
 ### 10. Evidence
 
-Assertions may be supported by evidence — observations, measurements, documents, records, test results, derived evidence.
+Assertions may be supported by evidence ; observations, measurements, documents, records, test results, derived evidence.
 
 **Output:** Evidence references attached to assertions.
 
@@ -110,7 +110,7 @@ Assertions, specializations, and representations are validated against semantic 
 
 ### 12. Govern
 
-Semantic artifacts are governed through their lifecycle — status updates, deprecation, retirement, replacement.
+Semantic artifacts are governed through their lifecycle ; status updates, deprecation, retirement, replacement.
 
 **Output:** Governance actions recorded.
 
@@ -138,19 +138,19 @@ The lifecycle has these properties:
 
 The lifecycle is not:
 
-- A bureaucratic process — it is the governed path for semantic evolution.
-- A blocker — it accelerates changes by providing clear governance.
-- A one-time check — it applies throughout the artifact's life.
-- A substitute for semantic judgment — it supports human governance.
+- A bureaucratic process : it is the governed path for semantic evolution.
+- A blocker : it accelerates changes by providing clear governance.
+- A one-time check : it applies throughout the artifact's life.
+- A substitute for semantic judgment : it supports human governance.
 
 ---
 
 ## Related Documents
 
-- [SEMANTIC-STATUS-MODEL.md](./SEMANTIC-STATUS-MODEL.md) — The 6-stage status model
-- [../ADR/](../ADR/) — Architectural Decision Records
-- [../CR/](../CR/) — Change Requests
-- [../../RESEARCH/INVESTIGATION-RECORD.md](../RESEARCH/INVESTIGATION-RECORD.md) — Investigation record
+- [SEMANTIC-STATUS-MODEL.md](./SEMANTIC-STATUS-MODEL.md) : The 6-stage status model
+- [../ADR/](../ADR/) : Architectural Decision Records
+- [../CR/](../CR/) : Change Requests
+- [../../RESEARCH/INVESTIGATION-RECORD.md](../RESEARCH/INVESTIGATION-RECORD.md) : Investigation record
 
 ---
 

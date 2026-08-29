@@ -1,6 +1,6 @@
 # WSF Governance
 
-> **Where WSF is governed — architectural decision records, change requests, lifecycle, authority, and the investigation record.**
+> **Where WSF is governed ; architectural decision records, change requests, lifecycle, authority, and the investigation record.**
 
 This repository (`wsf-governance/`) contains the governance artifacts of the World Semantic Foundation. The architectural baseline, lifecycle models, status semantics, change control, and the full investigation record are maintained here.
 
@@ -47,7 +47,7 @@ The governance layer provides:
 ## Current State
 
 - **22 ADRs** total (1 final, 21 baseline)
-- **1 CR** (CR-WSF-17 Rev.1 — Establish WSF Product Foundation)
+- **1 CR** (CR-WSF-17 Rev.1 : Establish WSF Product Foundation)
 - **2 governance documents** (lifecycle + status)
 - **1 investigation record** (10 investigations)
 - **2 templates** (ADR + CR)
@@ -76,30 +76,30 @@ The governance layer provides:
 
 The governance operates under these architectural principles (full list in [12 Foundational Principles](../wsf-docs/conceptual/FOUNDATIONAL-PRINCIPLES.md)):
 
-1. **Semantic Primacy** — Meaning precedes representation.
-2. **Minimal Foundation** — The architecture provides the smallest sufficiently expressive foundation.
-3. **Explicit Specialization** — Domain concepts specialize; they do not redefine.
-4. **Versioned Evolution** — Changes are governed through the lifecycle.
-5. **Authoritative Provenance** — Sources are tracked.
-6. **Governance First** — Architecture precedes implementation.
-7. **Layered Realization** — Multiple levels, distinct concerns.
-8. **Traceable Rationale** — Decisions document their reasoning.
-9. **Constrained Extensibility** — Extensions follow the governance model.
-10. **Verifiable Conformance** — Claims are demonstrable.
-11. **Identity by Meaning** — Identity persists through change.
-12. **Investigation-Driven** — Architectural decisions follow research.
+1. **Semantic Primacy** : Meaning precedes representation.
+2. **Minimal Foundation** : The architecture provides the smallest sufficiently expressive foundation.
+3. **Explicit Specialization** : Domain concepts specialize; they do not redefine.
+4. **Versioned Evolution** : Changes are governed through the lifecycle.
+5. **Authoritative Provenance** : Sources are tracked.
+6. **Governance First** : Architecture precedes implementation.
+7. **Layered Realization** : Multiple levels, distinct concerns.
+8. **Traceable Rationale** : Decisions document their reasoning.
+9. **Constrained Extensibility** : Extensions follow the governance model.
+10. **Verifiable Conformance** : Claims are demonstrable.
+11. **Identity by Meaning** : Identity persists through change.
+12. **Investigation-Driven** : Architectural decisions follow research.
 
 ---
 
 ## Related Repositories
 
-- [wsf/](../wsf/) — Canonical semantic assets
-- [wsf-spec/](../wsf-spec/) — Normative specifications
-- [wsf-examples/](../wsf-examples/) — Reference applications
-- [wsf-docs/](../wsf-docs/) — Conceptual documentation
-- [wsf-software/](../wsf-software/) — Semantic Engine
-- [wsf-connectors/](../wsf-connectors/) — Integration adapters
-- [wsf-visuals/](../wsf-visuals/) — Visual semantic assets
+- [wsf/](../wsf/) : Canonical semantic assets
+- [wsf-spec/](../wsf-spec/) : Normative specifications
+- [wsf-examples/](../wsf-examples/) : Reference applications
+- [wsf-docs/](../wsf-docs/) : Conceptual documentation
+- [wsf-software/](../wsf-software/) : Semantic Engine
+- [wsf-connectors/](../wsf-connectors/) : Integration adapters
+- [wsf-visuals/](../wsf-visuals/) : Visual semantic assets
 
 ---
 

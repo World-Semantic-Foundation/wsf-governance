@@ -18,7 +18,7 @@ The full architectural lineage is preserved through the investigation record.
 | [ADR-WSF-04](./ADR-WSF-04-Semantic-Inheritance.md) | Semantic Inheritance | Baseline |
 | [ADR-WSF-05](./ADR-WSF-05-Semantic-Assertion.md) | Semantic Assertion | Baseline |
 | [ADR-WSF-06](./ADR-WSF-06-Evidence-Provenance.md) | Evidence & Provenance | Baseline |
-| [ADR-WSF-07](./ADR-WSF-07-Capacity-Ability-Capability.md) | Capacity–Ability–Capability | Baseline |
+| [ADR-WSF-07](./ADR-WSF-07-Capacity-Ability-Capability.md) | Capacity:Ability:Capability | Baseline |
 | [ADR-WSF-08](./ADR-WSF-08-Foundational-Concept-Relationships.md) | Foundational Concept Relationships | Baseline |
 | [ADR-WSF-09](./ADR-WSF-09-Foundational-Concept-Taxonomy.md) | Foundational Concept Taxonomy | Baseline |
 | [ADR-WSF-10](./ADR-WSF-10-Semantic-Identity-Naming.md) | Semantic Identity & Naming | Baseline |
@@ -142,10 +142,10 @@ When ADRs appear to conflict:
 
 ## Related Documents
 
-- [GOVERNANCE/CHANGE-CONTROL-LIFECYCLE.md](../GOVERNANCE/CHANGE-CONTROL-LIFECYCLE.md) — The 8-stage lifecycle
-- [GOVERNANCE/SEMANTIC-STATUS-MODEL.md](../GOVERNANCE/SEMANTIC-STATUS-MODEL.md) — The 6-stage status model
-- [RESEARCH/INVESTIGATION-RECORD.md](../RESEARCH/INVESTIGATION-RECORD.md) — The 10 investigations behind these ADRs
-- [templates/ADR-TEMPLATE.md](../templates/ADR-TEMPLATE.md) — Template for new ADRs
+- [GOVERNANCE/CHANGE-CONTROL-LIFECYCLE.md](../GOVERNANCE/CHANGE-CONTROL-LIFECYCLE.md) : The 8-stage lifecycle
+- [GOVERNANCE/SEMANTIC-STATUS-MODEL.md](../GOVERNANCE/SEMANTIC-STATUS-MODEL.md) : The 6-stage status model
+- [RESEARCH/INVESTIGATION-RECORD.md](../RESEARCH/INVESTIGATION-RECORD.md) : The 10 investigations behind these ADRs
+- [templates/ADR-TEMPLATE.md](../templates/ADR-TEMPLATE.md) : Template for new ADRs
 
 ---
 

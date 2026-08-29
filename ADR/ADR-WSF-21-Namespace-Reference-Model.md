@@ -1,8 +1,8 @@
-# ADR-WSF-21 — Namespace and Reference Model
+# ADR-WSF-21 : Namespace and Reference Model
 
 Status: Baseline
 Program: World Semantic Foundation
-Parent: ADR-WSF-20 — Concept Definition Model
+Parent: ADR-WSF-20 ; Concept Definition Model
 Related: ADR-WSF-01, ADR-WSF-18, ADR-WSF-19, ADR-WSF-20, ADR-WSF-23
 Decision Type: Foundational Semantic Architecture
 Implementation: Implemented by the corresponding change request
@@ -31,11 +31,11 @@ The Namespace Model therefore:
 
 WSF:
 
-1. **Reference any concept** from anywhere — global resolution required.
-2. **Distinguish namespaces** — different authorities, different scopes.
-3. **Maintain stability** — identifiers persist across representations.
-4. **Support federation** — different organizations contribute concepts.
-5. **Resolve references** — given an identifier, find the concept.
+1. **Reference any concept** from anywhere : global resolution required.
+2. **Distinguish namespaces** : different authorities, different scopes.
+3. **Maintain stability** : identifiers persist across representations.
+4. **Support federation** : different organizations contribute concepts.
+5. **Resolve references** : given an identifier, find the concept.
 
 Without a Namespace Model:
 
@@ -130,13 +130,13 @@ Components:
 - **version**: Optional semantic version
 
 Examples:
-- `wsf-concept:Capability` — Tier 1 concept
-- `wsf-concept:BusinessCapability` — Tier 2 specialized concept
-- `wsf-rel:possesses` — Relationship
-- `wsf-cap:OTCHERE-OrderFulfillment` — Specific capability
-- `wsf-ex:OTCHERE-Inc` — Example entity
-- `wsf-assertion:OTCHERE-OrderFulfillment-001` — Specific assertion
-- `wsf-concept:Capability@1.0.0` — Specific version (optional)
+- `wsf-concept:Capability` ; Tier 1 concept
+- `wsf-concept:BusinessCapability` ; Tier 2 specialized concept
+- `wsf-rel:possesses` ; Relationship
+- `wsf-cap:OTCHERE-OrderFulfillment` ; Specific capability
+- `wsf-ex:OTCHERE-Inc` ; Example entity
+- `wsf-assertion:OTCHERE-OrderFulfillment-001` ; Specific assertion
+- `wsf-concept:Capability@1.0.0` ; Specific version (optional)
 
 ---
 
@@ -347,23 +347,23 @@ These are accepted consequences.
 
 ## 18. Rejected Alternatives
 
-### A — Local Identifiers Only
+### A : Local Identifiers Only
 
 Rejected. Cannot integrate across systems.
 
-### B — UUID Only
+### B : UUID Only
 
 Rejected. Not human-readable.
 
-### C — Uncontrolled Namespaces
+### C : Uncontrolled Namespaces
 
 Rejected. Leads to collisions.
 
-### D — Implicit Namespaces
+### D : Implicit Namespaces
 
 Rejected. Cannot resolve.
 
-### E — Version in Every Identifier
+### E : Version in Every Identifier
 
 Rejected. Identifier should be persistent.
 

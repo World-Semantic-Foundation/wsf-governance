@@ -2,12 +2,12 @@ Amendment to preserve original CR’s intent while expanding it from repository 
 
 Below is the formal revised version.
 
-CR-WSF-17 Rev. 1 — Establish WSF Product Foundation
+CR-WSF-17 Rev. 1 ; Establish WSF Product Foundation
 
 Status: Baseline
 Revision: 1
 Type: Foundational Program Implementation
-Implements: ADR-WSF-17 — Foundational Semantic Architecture
+Implements: ADR-WSF-17 ; Foundational Semantic Architecture
 Target Organization: World-Semantic-Foundation
 Supersedes: CR-WSF-17
 Scope: World Semantic Foundation inception, semantic assets, executable platform, integration, visualization, and real-world realization
@@ -84,7 +84,7 @@ and ultimately applied to real-world entities, systems, organizations, processes
 
 This CR implements:
 
-ADR-WSF-17 — Foundational Semantic Architecture
+ADR-WSF-17 ; Foundational Semantic Architecture
 
 WSF shall establish a deliberately constrained foundational semantic architecture rather than a flat terminology catalogue or an unrestricted universal taxonomy.
 
@@ -689,14 +689,14 @@ WSF shall preserve the research lineage leading to its architecture.
 
 The initial research record shall include:
 
-Capability–Ability–Capacity
+Capability:Ability:Capacity
 Semantic Representation
-Intent–Constraint–Commitment
+Intent:Constraint:Commitment
 Ontological Classification
-Proposition–Assertion
-Identity–Reference
-Existence–Occurrence
-Time–Space–Causality–Validity
+Proposition:Assertion
+Identity:Reference
+Existence:Occurrence
+Time:Space:Causality:Validity
 Foundational Semantic Synthesis
 WSF Product Architecture
 
@@ -876,7 +876,7 @@ Semantic Foundation
 * [ ]	Foundational semantic architecture is implemented.
 * [ ]	Foundational concepts are explicitly classified.
 * [ ]	Derived concepts are distinguished.
-* [ ]	Capability–Ability–Capacity is represented through Disposition.
+* [ ]	Capability:Ability:Capacity is represented through Disposition.
 * [ ]	Identity and Reference are distinct.
 * [ ]	Proposition and Assertion are distinct.
 * [ ]	Truth and Validity are distinct.
@@ -1127,4 +1127,4 @@ This preserves the program’s central discipline:
 
 Investigate deeply, decide explicitly, implement traceably, demonstrate practically, and evolve under governance.
 
-This revision is now sufficiently broad to represent the actual WSF program outcome rather than just its repository bootstrap. The next step should be the implementation decomposition of CR-WSF-17 Rev. 1—turning these deliverables into concrete GitHub repositories, directory trees, initial files, software components, visual asset conventions, and an ordered implementation backlog.
+This revision is now sufficiently broad to represent the actual WSF program outcome rather than just its repository bootstrap. The next step should be the implementation decomposition of CR-WSF-17 Rev. 1:turning these deliverables into concrete GitHub repositories, directory trees, initial files, software components, visual asset conventions, and an ordered implementation backlog.

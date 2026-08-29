@@ -1,8 +1,8 @@
 Following investigation, the architecture advances from synthesis into the formal WSF implementation decision layer.
 
-The first ADR should establish the architecture itself—not individual concepts. Individual semantic decisions can then build underneath it.
+The first ADR should establish the architecture itself:not individual concepts. Individual semantic decisions can then build underneath it.
 
-ADR-WSF-17 — Foundational Semantic Architecture
+ADR-WSF-17 ; Foundational Semantic Architecture
 
 Status: Baseline
 Decision Type: Foundational Architecture
@@ -334,7 +334,7 @@ Rejected because terminology without formal semantic relationships cannot reliab
 
 B. Universal Class Hierarchy
 
-Rejected because it forces fundamentally different semantic categories—entities, events, states, relationships, propositions, and dispositions—into an inappropriate single taxonomy.
+Rejected because it forces fundamentally different semantic categories:entities, events, states, relationships, propositions, and dispositions:into an inappropriate single taxonomy.
 
 C. Domain-First Ontology
 

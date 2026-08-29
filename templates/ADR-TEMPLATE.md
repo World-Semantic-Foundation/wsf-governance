@@ -60,12 +60,12 @@ What other options were considered, and why were they rejected?
 ### Lifecycle Status
 
 Current status of this ADR. Per the 6-stage semantic status model:
-- **Candidate** — Under initial consideration
-- **Investigating** — Under formal investigation
-- **Proposed** — Formally proposed, awaiting decision
-- **Normative** — Accepted and authoritative
-- **Deprecated** — No longer recommended
-- **Retired** — Formally withdrawn
+- **Candidate** : Under initial consideration
+- **Investigating** : Under formal investigation
+- **Proposed** : Formally proposed, awaiting decision
+- **Normative** : Accepted and authoritative
+- **Deprecated** : No longer recommended
+- **Retired** : Formally withdrawn
 
 ---
 
@@ -86,7 +86,7 @@ Current status of this ADR. Per the 6-stage semantic status model:
 - **Be specific**: Avoid ambiguous language
 - **Reference evidence**: Link to findings, investigations, examples
 - **State principles**: Apply the 12 Foundational Principles
-- **Use canonical examples**: OTCHERE Inc / Kwesi — never ACME
+- **Use canonical examples**: OTCHERE Inc / Kwesi : never ACME
 - **Distinguish concerns**: Do NOT conflate investigation findings with architectural decisions with implementation artifacts
 - **Preserve identity**: Reference Semantic Identity, not just names
 

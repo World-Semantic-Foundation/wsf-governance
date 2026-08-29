@@ -1,8 +1,8 @@
-# ADR-WSF-20 — Concept Definition Model
+# ADR-WSF-20 : Concept Definition Model
 
 Status: Baseline
 Program: World Semantic Foundation
-Parent: ADR-WSF-19 — Semantic Relationship Model
+Parent: ADR-WSF-19 ; Semantic Relationship Model
 Related: ADR-WSF-01, ADR-WSF-09, ADR-WSF-10, ADR-WSF-11, ADR-WSF-18, ADR-WSF-19
 Decision Type: Foundational Semantic Architecture
 Implementation: Implemented by the corresponding change request
@@ -293,7 +293,7 @@ The machine-readable specification format SHALL support:
 - YAML (human-readable, version-controllable);
 - JSON-LD (linked data, web-compatible);
 - RDF/Turtle (semantic web);
-- OWL XML (formal ontology) — where applicable.
+- OWL XML (formal ontology) : where applicable.
 
 Per ADR-WSF-23 (forthcoming), the representation strategy is decided.
 
@@ -431,27 +431,27 @@ These are accepted consequences.
 
 ## 18. Rejected Alternatives
 
-### A — Free-form Definitions
+### A : Free-form Definitions
 
 Rejected. Inconsistent, hard to validate.
 
-### B — Pure Formal Definitions
+### B : Pure Formal Definitions
 
 Rejected. Excludes human readability.
 
-### C — Definition by Example
+### C : Definition by Example
 
 Rejected. Insufficient rigor.
 
-### D — Definition by Extension
+### D : Definition by Extension
 
 Rejected. Cannot enumerate all instances.
 
-### E — Definition by Negation
+### E : Definition by Negation
 
 Rejected. Defines what something isn't, not what it is.
 
-### F — No Definition
+### F : No Definition
 
 Rejected. Cannot be reasoned over.
 
@@ -471,7 +471,7 @@ This ADR does NOT decide:
 
 The decision can be reduced to one sentence:
 
-> **Every WSF concept is defined through a structured specification that includes identity, classification, definition, conditions, constraints, relationships, examples, context, governance, and provenance — supporting both human understanding and machine processing.**
+> **Every WSF concept is defined through a structured specification that includes identity, classification, definition, conditions, constraints, relationships, examples, context, governance, and provenance ; supporting both human understanding and machine processing.**
 
 This is the foundation for valid, comparable, evolvable concept definitions.
 

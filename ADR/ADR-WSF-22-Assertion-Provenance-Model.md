@@ -1,8 +1,8 @@
-# ADR-WSF-22 — Assertion and Provenance Model
+# ADR-WSF-22 : Assertion and Provenance Model
 
 Status: Baseline
 Program: World Semantic Foundation
-Parent: ADR-WSF-21 — Namespace and Reference Model
+Parent: ADR-WSF-21 ; Namespace and Reference Model
 Related: ADR-WSF-05, ADR-WSF-06, ADR-WSF-12, ADR-WSF-18, ADR-WSF-19, ADR-WSF-21
 Decision Type: Foundational Semantic Architecture
 Implementation: Implemented by the corresponding change request
@@ -15,7 +15,7 @@ The World Semantic Foundation shall establish an **Assertion and Provenance Mode
 
 The governing principle is:
 
-> **A WSF assertion is a governed, attributed, evidenced claim — not an unverified statement.**
+> **A WSF assertion is a governed, attributed, evidenced claim ; not an unverified statement.**
 
 The Assertion and Provenance Model therefore:
 
@@ -393,23 +393,23 @@ These are accepted consequences.
 
 ## 22. Rejected Alternatives
 
-### A — Unattributed Assertions
+### A : Unattributed Assertions
 
 Rejected. Cannot be validated or trusted.
 
-### B — Evidence-Free Assertions
+### B : Evidence-Free Assertions
 
 Rejected. Cannot distinguish from mere claims.
 
-### C — Assertion Equals Truth
+### C : Assertion Equals Truth
 
 Rejected. Conflates semantic and epistemic concerns.
 
-### D — Static Assertions
+### D : Static Assertions
 
 Rejected. Cannot evolve or be superseded.
 
-### E — Implicit Trust
+### E : Implicit Trust
 
 Rejected. Trust must be assessed, not assumed.
 
@@ -430,7 +430,7 @@ This ADR does NOT decide:
 
 The decision can be reduced to one sentence:
 
-> **A WSF assertion is a structured, attributed, evidenced, validatable claim — with explicit provenance, lifecycle, trust assessment, and distinct from truth.**
+> **A WSF assertion is a structured, attributed, evidenced, validatable claim ; with explicit provenance, lifecycle, trust assessment, and distinct from truth.**
 
 This is the foundation for trustworthy semantic claims about the world.
 

@@ -1,8 +1,8 @@
-# ADR-WSF-18 — Concept Identity
+# ADR-WSF-18 : Concept Identity
 
 Status: Baseline
 Program: World Semantic Foundation
-Parent: ADR-WSF-17 — Foundational Semantic Architecture
+Parent: ADR-WSF-17 ; Foundational Semantic Architecture
 Implements: CR-WSF-17 Rev.1 §31 (Next Implementation ADRs)
 Related: ADR-WSF-01, ADR-WSF-02, ADR-WSF-09, ADR-WSF-10, ADR-WSF-11, ADR-WSF-12, ADR-WSF-16
 Decision Type: Foundational Semantic Architecture
@@ -326,27 +326,27 @@ These are accepted consequences.
 
 ## 17. Rejected Alternatives
 
-### A — Identity by Name
+### A : Identity by Name
 
 Rejected. Names collide, change, and are not stable.
 
-### B — Identity by Location
+### B : Identity by Location
 
 Rejected. Locations change (repository moves, renames).
 
-### C — Identity by Version
+### C : Identity by Version
 
 Rejected. Version is variable; identity must be persistent.
 
-### D — Identity by Representation
+### D : Identity by Representation
 
 Rejected. Representations change; meaning persists.
 
-### E — Identity by Context
+### E : Identity by Context
 
 Rejected. Concepts may apply across contexts.
 
-### F — Implicit Identity
+### F : Implicit Identity
 
 Rejected. Implicit identity is fragile and creates hidden collisions.
 

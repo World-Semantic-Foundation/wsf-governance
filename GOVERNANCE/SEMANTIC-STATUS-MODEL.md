@@ -156,9 +156,9 @@ Each repository declares the status of its artifacts. The status metadata travel
 
 ## Related Documents
 
-- [CHANGE-CONTROL-LIFECYCLE.md](./CHANGE-CONTROL-LIFECYCLE.md) — The 8-stage lifecycle
-- [../ADR/ADR-WSF-16-Semantic-Evolution-Versioning.md](../ADR/ADR-WSF-16-Semantic-Evolution-Versioning.md) — Versioning model
-- [../ADR/ADR-WSF-15-Semantic-Authority-Governance.md](../ADR/ADR-WSF-15-Semantic-Authority-Governance.md) — Authority model
+- [CHANGE-CONTROL-LIFECYCLE.md](./CHANGE-CONTROL-LIFECYCLE.md) : The 8-stage lifecycle
+- [../ADR/ADR-WSF-16-Semantic-Evolution-Versioning.md](../ADR/ADR-WSF-16-Semantic-Evolution-Versioning.md) : Versioning model
+- [../ADR/ADR-WSF-15-Semantic-Authority-Governance.md](../ADR/ADR-WSF-15-Semantic-Authority-Governance.md) : Authority model
 
 ---
 

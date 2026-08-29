@@ -1,8 +1,8 @@
-# ADR-WSF-19 — Semantic Relationship Model
+# ADR-WSF-19 : Semantic Relationship Model
 
 Status: Baseline
 Program: World Semantic Foundation
-Parent: ADR-WSF-18 — Concept Identity
+Parent: ADR-WSF-18 ; Concept Identity
 Related: ADR-WSF-01, ADR-WSF-04, ADR-WSF-08, ADR-WSF-09, ADR-WSF-11, ADR-WSF-12, ADR-WSF-14, ADR-WSF-18
 Decision Type: Foundational Semantic Architecture
 Implementation: Implemented by the corresponding change request
@@ -106,74 +106,74 @@ WSF SHALL distinguish the following categories of Semantic Relationships:
 Connect entities to entities.
 
 Examples:
-- `wsf-rel:has-part` — entity composition
-- `wsf-rel:is-part-of` — entity decomposition
-- `wsf-rel:contains` — containment
-- `wsf-rel:instantiates` — instance-of (Entity → Concept)
+- `wsf-rel:has-part` ; entity composition
+- `wsf-rel:is-part-of` ; entity decomposition
+- `wsf-rel:contains` ; containment
+- `wsf-rel:instantiates` ; instance-of (Entity → Concept)
 
 ### 5.2 Semantically Significant Relationships
 
 Connect entities/concepts with specific semantic meaning.
 
 Examples:
-- `wsf-rel:possesses` — Entity possesses Capability/Property
-- `wsf-rel:has-capability` — Entity has Capability
-- `wsf-rel:assumes-role` — Entity assumes Role
-- `wsf-rel:realizes` — Activity realizes Outcome
-- `wsf-rel:enables` — X enables Y
-- `wsf-rel:produces` — Activity produces Outcome
-- `wsf-rel:governs` — Authority governs Artifact
-- `wsf-rel:specializes` — Concept specializes Concept
-- `wsf-rel:asserts` — Subject asserts Assertion
+- `wsf-rel:possesses` ; Entity possesses Capability/Property
+- `wsf-rel:has-capability` ; Entity has Capability
+- `wsf-rel:assumes-role` ; Entity assumes Role
+- `wsf-rel:realizes` ; Activity realizes Outcome
+- `wsf-rel:enables` ; X enables Y
+- `wsf-rel:produces` ; Activity produces Outcome
+- `wsf-rel:governs` ; Authority governs Artifact
+- `wsf-rel:specializes` ; Concept specializes Concept
+- `wsf-rel:asserts` ; Subject asserts Assertion
 
 ### 5.3 Temporal Relationships
 
 Connect events, states, and intervals in time.
 
 Examples:
-- `wsf-rel:before` — Event A before Event B
-- `wsf-rel:after` — Event A after Event B
-- `wsf-rel:during` — Event during Interval
-- `wsf-rel:holds-during` — State holds during Interval
+- `wsf-rel:before` ; Event A before Event B
+- `wsf-rel:after` ; Event A after Event B
+- `wsf-rel:during` ; Event during Interval
+- `wsf-rel:holds-during` ; State holds during Interval
 
 ### 5.4 Causal Relationships
 
 Connect causes and effects.
 
 Examples:
-- `wsf-rel:causes` — X causes Y
-- `wsf-rel:enables` — X enables Y (cognitively)
-- `wsf-rel:prevents` — X prevents Y
-- `wsf-rel:triggers` — X triggers Y
-- `wsf-rel:contributes-to` — X contributes to Y
+- `wsf-rel:causes` ; X causes Y
+- `wsf-rel:enables` ; X enables Y (cognitively)
+- `wsf-rel:prevents` ; X prevents Y
+- `wsf-rel:triggers` ; X triggers Y
+- `wsf-rel:contributes-to` ; X contributes to Y
 
 ### 5.5 Normative Relationships
 
 Connect normative semantic elements.
 
 Examples:
-- `wsf-rel:obligates` — Agreement obligates Party
-- `wsf-rel:authorizes` — Authority authorizes Action
-- `wsf-rel:permits` — Permit allows Action
-- `wsf-rel:prohibits` — Prohibition disallows Action
+- `wsf-rel:obligates` ; Agreement obligates Party
+- `wsf-rel:authorizes` ; Authority authorizes Action
+- `wsf-rel:permits` ; Permit allows Action
+- `wsf-rel:prohibits` ; Prohibition disallows Action
 
 ### 5.6 Provenance Relationships
 
 Connect semantic artifacts to their origins.
 
 Examples:
-- `wsf-rel:asserted-by` — Assertion asserted by Agent
-- `wsf-rel:derived-from` — Assertion derived from Source
-- `wsf-rel:supported-by` — Assertion supported by Evidence
+- `wsf-rel:asserted-by` ; Assertion asserted by Agent
+- `wsf-rel:derived-from` ; Assertion derived from Source
+- `wsf-rel:supported-by` ; Assertion supported by Evidence
 
 ### 5.7 Identity Relationships
 
 Connect identities.
 
 Examples:
-- `wsf-rel:same-as` — X is identical to Y
-- `wsf-rel:specializes` — Concept specializes Concept
-- `wsf-rel:supersedes` — X supersedes Y
+- `wsf-rel:same-as` ; X is identical to Y
+- `wsf-rel:specializes` ; Concept specializes Concept
+- `wsf-rel:supersedes` ; X supersedes Y
 
 ---
 
@@ -391,23 +391,23 @@ These are accepted consequences.
 
 ## 16. Rejected Alternatives
 
-### A — Generic "Related-To"
+### A : Generic "Related-To"
 
 Rejected. Loses all semantic information.
 
-### B — Uncontrolled Vocabulary
+### B : Uncontrolled Vocabulary
 
 Rejected. Leads to ambiguity and overlap.
 
-### C — Property-Only Model
+### C : Property-Only Model
 
 Rejected. Cannot express relationships between entities.
 
-### D — Untyped Edges
+### D : Untyped Edges
 
 Rejected. Loses domain/range constraints.
 
-### E — Implicit Relationships
+### E : Implicit Relationships
 
 Rejected. Cannot be validated or reasoned over.
 
@@ -429,7 +429,7 @@ This ADR does NOT decide:
 
 The decision can be reduced to one sentence:
 
-> **Semantic Relationships in WSF are governed vocabulary items with stable identities, specified domains and ranges, explicit mathematical properties, and controlled semantics — not generic edges.**
+> **Semantic Relationships in WSF are governed vocabulary items with stable identities, specified domains and ranges, explicit mathematical properties, and controlled semantics ; not generic edges.**
 
 This is the foundation for assertion validation, semantic query, and cross-system integration.
 
