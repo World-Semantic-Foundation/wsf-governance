@@ -1,11 +1,11 @@
 # ADR-WSF-20 — Concept Definition Model
 
-Status: Proposed
+Status: Baseline
 Program: World Semantic Foundation
 Parent: ADR-WSF-19 — Semantic Relationship Model
 Related: ADR-WSF-01, ADR-WSF-09, ADR-WSF-10, ADR-WSF-11, ADR-WSF-18, ADR-WSF-19
 Decision Type: Foundational Semantic Architecture
-Implementation: Authorized upon Acceptance (via subsequent CRs)
+Implementation: Implemented by the corresponding change request
 
 ---
 

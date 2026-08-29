@@ -1,10 +1,10 @@
-Yes. We should now move from synthesis into the formal WSF implementation decision layer.
+Following investigation, the architecture advances from synthesis into the formal WSF implementation decision layer.
 
 The first ADR should establish the architecture itself—not individual concepts. Individual semantic decisions can then build underneath it.
 
 ADR-WSF-17 — Foundational Semantic Architecture
 
-Status: Proposed
+Status: Baseline
 Decision Type: Foundational Architecture
 Scope: World Semantic Foundation (WSF)
 Supersedes: None

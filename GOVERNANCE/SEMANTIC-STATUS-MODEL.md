@@ -1,154 +1,165 @@
 # Semantic Status Model
 
-> **The 6-stage governance status for every semantic artifact in WSF.**
+> **The 6-stage governance status for every semantic artifact in the World Semantic Foundation.**
 
-Per CR-WSF-17 Rev.1 §14, every semantic construct has an explicit status. The status determines how the construct may be used.
+Every semantic artifact has an explicit status that determines how it is treated by the architecture and by downstream consumers. The status model establishes the controlled vocabulary of semantic lifecycle states.
 
 ---
 
-## The 6-Stage Status Model
+## The 6 Stages
 
 ```
-Candidate → Investigating → Proposed → Normative → Deprecated → Retired
+Candidate → Investigating → Proposed → Baseline → Deprecated → Retired
 ```
 
-| Status | Description | Allowed Uses |
+The status flow is:
+
+| From | To | Trigger |
 |---|---|---|
-| **Candidate** | Initial consideration, no formal review | Internal exploration only |
-| **Investigating** | Under formal investigation | Research and discussion |
-| **Proposed** | Formally proposed, awaiting decision | ADRs, draft specs |
-| **Normative** | Accepted and authoritative | Reference, extension, conformance |
-| **Deprecated** | No longer recommended, replacement available | Existing implementations only |
-| **Retired** | Formally withdrawn | Historical reference only |
+| Candidate | Investigating | Investigation begins |
+| Investigating | Proposed | Synthesis completes |
+| Proposed | Baseline | Architectural decision recorded (ADR) |
+| Baseline | Final | Implementation verified (CR) |
+| Baseline | Deprecated | Replaced or superseded |
+| Baseline | Retired | Withdrawn or obsolete |
+| Deprecated | Retired | Historical record complete |
+
+**Note**: Not all artifacts progress through all stages. Some retire early, others skip stages when appropriate.
+
+---
+
+## Status Definitions
+
+### Candidate
+
+A potential semantic artifact has been identified but not yet investigated. The candidate is provisional and may not survive investigation.
+
+**Properties:**
+- Identity may be provisional
+- Definition is incomplete or absent
+- No authoritative commitment
+- May be removed without notice
+
+### Investigating
+
+The semantic artifact is under active investigation. The investigation gathers evidence, considers alternatives, and produces findings.
+
+**Properties:**
+- Investigation findings exist
+- Definition may be partial
+- Authority is the investigation team
+- May evolve substantially
+
+### Proposed
+
+The semantic artifact has completed investigation. A synthesis document captures the implications and recommendations.
+
+**Properties:**
+- Investigation findings are final
+- Synthesis captures implications
+- Definition may be partial
+- Authority is the synthesis team
+
+### Baseline
+
+The architectural decision has been formalized as an ADR. The semantic artifact is the authoritative baseline for the foundation.
+
+**Properties:**
+- ADR exists and references the artifact
+- Definition is formalized
+- Authority is established
+- Downstream consumers may specialize
+- Subject to evolution (additive changes possible)
+- Versioned per [ADR-WSF-16](../ADR/ADR-WSF-16-Semantic-Evolution-Versioning.md)
+
+### Final
+
+The implementation has been verified. The semantic artifact is the final, production-ready form for the foundation.
+
+**Properties:**
+- ADR + CR exist
+- Implementation is verified
+- Conformance is validated
+- Production-ready
+- Subsequent changes trigger new artifact identities
+
+### Deprecated
+
+The semantic artifact is no longer recommended for new use. It remains available for existing references but should not be used for new specializations.
+
+**Properties:**
+- Replaced by a successor or superseded
+- Existing references remain valid
+- New specializations discouraged
+- Migration guidance provided
+
+### Retired
+
+The semantic artifact is no longer in active use. It is preserved for historical reference but is not maintained.
+
+**Properties:**
+- Preserved for audit trail
+- Historical interpretability maintained
+- No further evolution
+- Reading-only
 
 ---
 
 ## Status Transitions
 
-```
-Candidate ──────► Investigating ──────► Proposed ──────► Normative
-                                                                      │
-                                                                      ▼
-                                                                Deprecated
-                                                                      │
-                                                                      ▼
-                                                                   Retired
-```
+### Forward Transitions
 
-- Each transition requires governance approval
-- Status changes are recorded as ADRs or governance decisions
-- Deprecated artifacts retain their identity for backward compatibility
-- Retired artifacts may retain historical identity but are no longer authoritative
+Forward transitions are governed by the [Change Control Lifecycle](./CHANGE-CONTROL-LIFECYCLE.md).
 
----
+### Backward Transitions
 
-## Per-Artifact Status
+Backward transitions are permitted only with explicit governance:
 
-Each semantic artifact (concept, relationship, assertion type, etc.) has its own status. The WSF kernel is **initially Candidate** and progresses through stages as the implementation matures.
-
-### Initial Status Assignments (Tier 1 — 12 Foundational Candidates)
-
-| Concept | Initial Status | Notes |
+| Transition | Allowed | Governance |
 |---|---|---|
-| Entity | Proposed | Foundation across all 3 foundations |
-| Concept | Proposed | Semantic Modeling Foundation |
-| Relationship | Proposed | Disposition/Structural/Temporal/Causal/Dispositional |
-| Event | Proposed | Occurrence domain |
-| State | Proposed | Condition domain |
-| Disposition | Proposed | New foundational category |
-| Proposition | Proposed | Pre-assertion semantic content |
-| Assertion | Proposed | Semantic claims with qualifiers |
-| Identity | Proposed | Distinct from Identifier/Name/Reference |
-| Context | Proposed | Semantic qualification |
-| Time | Proposed | Temporal dimension |
-| Space | Proposed | Spatial dimension |
-
-### Initial Status Assignments (Tier 2 — 9 Supporting Constructs)
-
-| Construct | Initial Status |
-|---|---|
-| Identifier | Proposed |
-| Reference | Proposed |
-| Namespace | Proposed |
-| Term | Proposed |
-| Definition | Proposed |
-| Validity | Proposed |
-| Evidence | Proposed |
-| Provenance | Proposed |
-| Authority | Proposed |
+| Investigating → Candidate | Yes | Investigation abandoned |
+| Proposed → Investigating | Yes | New evidence requires re-investigation |
+| Baseline → Proposed | Limited | Breaking change requires re-decision |
+| Final → Baseline | Limited | Defect correction with governance |
+| Deprecated → Baseline | Yes | Deprecation rescinded |
+| Retired → (any) | No | Retirement is terminal |
 
 ---
 
-## Status Decision Authority
+## Status in Semantic Assertions
 
-| Transition | Authority |
-|---|---|
-| Candidate → Investigating | WSF Working Group |
-| Investigating → Proposed | WSF Working Group + ADR |
-| Proposed → Normative | ADR Accepted by WSF Governance |
-| Normative → Deprecated | ADR Accepted + Replacement Defined |
-| Deprecated → Retired | ADR Accepted + Notice Period |
-
----
-
-## Status Indicators in Repositories
-
-When a semantic artifact is documented in any WSF repository, its status should be indicated:
+Semantic assertions reference their underlying concepts at specific statuses:
 
 ```yaml
+- assertion:
+  subject: wsf-cap:OrderFulfillment
+  status_at_assertion: Baseline  # The concept was at Baseline status when this assertion was made
+```
+
+This preserves the historical validity of assertions even after concept status changes.
+
 ---
-semantic_id: <URI>
-preferred_name: <name>
-status: <Candidate | Investigating | Proposed | Normative | Deprecated | Retired>
-version: <semver>
-defined_by: <ADR-WSF-XX>
-superseded_by: <ADR-WSF-YY> (if applicable)
-last_reviewed: <YYYY-MM-DD>
----
+
+## Status in Repositories
+
+Each repository declares the status of its artifacts. The status metadata travels with the artifact through its lifecycle.
+
+```yaml
+- concept:
+  semantic_id: wsf:Entity
+  status: Baseline
+  version: 1.0.0
+  ...
 ```
 
 ---
 
-## Status vs Lifecycle
+## Related Documents
 
-**Status** (this document): Where the artifact is in the governance progression (Candidate → Normative → Retired).
-
-**Lifecycle**: The operational lifecycle (Draft → Active → Superseded → Archived) of a specific version.
-
-These are distinct concepts:
-- An artifact can be **Normative** in status but its **Lifecycle** version can be **Deprecated** (a new normative version exists)
-- An artifact can be **Candidate** in status but **Active** in lifecycle (being actively worked on)
+- [CHANGE-CONTROL-LIFECYCLE.md](./CHANGE-CONTROL-LIFECYCLE.md) — The 8-stage lifecycle
+- [../ADR/ADR-WSF-16-Semantic-Evolution-Versioning.md](../ADR/ADR-WSF-16-Semantic-Evolution-Versioning.md) — Versioning model
+- [../ADR/ADR-WSF-15-Semantic-Authority-Governance.md](../ADR/ADR-WSF-15-Semantic-Authority-Governance.md) — Authority model
 
 ---
 
-## Migration and Backward Compatibility
-
-When a Normative artifact transitions to Deprecated:
-- Its identity is preserved
-- A replacement MUST be defined
-- Existing implementations continue to work
-- New implementations SHOULD use the replacement
-- A deprecation period is established
-
-When an artifact transitions to Retired:
-- Its identity is preserved for historical reference
-- Existing implementations continue to work
-- New implementations MUST NOT use it
-- Retired artifacts may be physically retained (per Principle 7 — Provenance)
-
----
-
-## Example Status Lifecycle
-
-```
-Day 0:  Status: Candidate       (internal exploration)
-Day 7:  Status: Investigating   (formal investigation begins)
-Day 30: Status: Proposed        (ADR drafted, awaiting decision)
-Day 60: Status: Normative       (ADR accepted, artifact is authoritative)
-Day 730: Status: Deprecated    (replacement defined, new work uses replacement)
-Day 1095: Status: Retired      (no longer authoritative, but identity preserved)
-```
-
----
-
-*This status model is established per CR-WSF-17 Rev.1 §14. The exact semantics and transition rules shall be refined by a subsequent governance ADR.*
+*The Semantic Status Model is the controlled vocabulary of semantic lifecycle states.*

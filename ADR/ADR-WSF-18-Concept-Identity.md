@@ -1,12 +1,12 @@
 # ADR-WSF-18 — Concept Identity
 
-Status: Proposed
+Status: Baseline
 Program: World Semantic Foundation
 Parent: ADR-WSF-17 — Foundational Semantic Architecture
 Implements: CR-WSF-17 Rev.1 §31 (Next Implementation ADRs)
 Related: ADR-WSF-01, ADR-WSF-02, ADR-WSF-09, ADR-WSF-10, ADR-WSF-11, ADR-WSF-12, ADR-WSF-16
 Decision Type: Foundational Semantic Architecture
-Implementation: Authorized upon Acceptance (via subsequent CRs)
+Implementation: Implemented by the corresponding change request
 
 ---
 

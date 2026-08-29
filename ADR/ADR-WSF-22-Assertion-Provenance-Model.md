@@ -1,11 +1,11 @@
 # ADR-WSF-22 — Assertion and Provenance Model
 
-Status: Proposed
+Status: Baseline
 Program: World Semantic Foundation
 Parent: ADR-WSF-21 — Namespace and Reference Model
 Related: ADR-WSF-05, ADR-WSF-06, ADR-WSF-12, ADR-WSF-18, ADR-WSF-19, ADR-WSF-21
 Decision Type: Foundational Semantic Architecture
-Implementation: Authorized upon Acceptance (via subsequent CRs)
+Implementation: Implemented by the corresponding change request
 
 ---
 

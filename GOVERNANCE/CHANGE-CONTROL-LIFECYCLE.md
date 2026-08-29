@@ -1,183 +1,157 @@
 # Change Control Lifecycle
 
-> **The 8-stage lifecycle that governs every semantic change in WSF.**
+> **The 8-stage lifecycle that governs every semantic change in the World Semantic Foundation.**
 
-Per CR-WSF-17 Rev.1 §13, every semantic artifact progresses through this lifecycle. The lifecycle is itself an ADR subject — refinements are made through the ADR process.
-
----
-
-## The 8-Stage Lifecycle
-
-```
-Investigation
-    ↓
-Finding
-    ↓
-Synthesis
-    ↓
-ADR
-    ↓
-CR
-    ↓
-Implementation
-    ↓
-Validation
-    ↓
-Release
-```
-
-| Stage | Purpose | Output |
-|---|---|---|
-| **Investigation** | Research a question | Investigation document |
-| **Finding** | Document observations | Findings ledger entry |
-| **Synthesis** | Consolidate findings | Synthesis document |
-| **ADR** | Establish architectural decision | ADR record |
-| **CR** | Propose implementation | CR document |
-| **Implementation** | Execute the change | Repository artifacts, code |
-| **Validation** | Verify acceptance criteria | Validation report |
-| **Release** | Make normative | Tagged release |
+The Change Control Lifecycle establishes the governed process through which every semantic artifact evolves. No semantic change bypasses the lifecycle.
 
 ---
 
-## Stage Details
+## The 8 Stages
 
-### 1. Investigation
+```
+1. DISCOVER
+       ↓
+2. DEFINE
+       ↓
+3. REVIEW
+       ↓
+4. AUTHORIZE
+       ↓
+5. FORMALIZE
+       ↓
+6. PUBLISH
+       ↓
+7. SPECIALIZE
+       ↓
+8. INSTANTIATE
+       ↓
+9. ASSERT
+       ↓
+10. EVIDENCE
+       ↓
+11. VALIDATE
+       ↓
+12. GOVERN
+       ↓
+13. VERSION / DEPRECATE
+```
 
-- Research questions, prior art, references
-- Document in `wsf-governance/RESEARCH/`
-- Tag as investigation (not decision)
-- Output: Investigation document with findings
-
-### 2. Finding
-
-- Each observation recorded in findings ledger
-- One finding per file (e.g., `F-123-finding-name.md`)
-- Status: OPEN (until promoted)
-- Output: Findings (F-NNN)
-
-### 3. Synthesis
-
-- Consolidate related findings
-- Identify architectural decisions needed
-- Output: Synthesis document (per investigation)
-
-### 4. ADR
-
-- Establish architectural position
-- Use ADR template
-- Reference findings and synthesis
-- Output: ADR record in `wsf-governance/ADR/`
-
-### 5. CR
-
-- Propose implementation of one or more ADRs
-- Use CR template
-- Specify deliverables and acceptance criteria
-- Output: CR record in `wsf-governance/CR/`
-
-### 6. Implementation
-
-- Execute CR work
-- Create repositories, files, components
-- Apply canonical examples (OTCHERE/Kwesi)
-- Output: Working artifacts
-
-### 7. Validation
-
-- Verify against CR acceptance criteria
-- Test against principles
-- Output: Validation report
-
-### 8. Release
-
-- Tag release
-- Update semantic status (Candidate → Normative)
-- Announce
-- Output: Tagged release with changelog
+Different repositories participate at different stages. The lifecycle ensures that every semantic artifact passes through the appropriate governance checkpoints.
 
 ---
 
-## Critical Distinctions
+## Stage Definitions
 
-The lifecycle explicitly distinguishes:
+### 1. Discover
 
-```
-Investigation Finding  ≠  Architectural Decision  ≠  Implementation
-```
+A semantic need, gap, or opportunity is identified. Initial context is captured. The investigation question is formulated.
 
-These three categories are **NOT** to be conflated:
-- A finding is an observation
-- A decision is an architectural position
-- Implementation is the execution
+**Output:** Investigation proposal with scope and initial framing.
 
-Each category lives in different documentation:
-- Findings: `01_findings/` (or `wsf-governance/RESEARCH/findings/`)
-- Decisions: `wsf-governance/ADR/`
-- Implementation: `wsf-governance/CR/` + the actual artifacts
+### 2. Define
+
+The investigation is conducted. Findings are gathered, alternatives considered, evidence collected. The semantic landscape is mapped.
+
+**Output:** Investigation findings (F-NNN) preserved as research record.
+
+### 3. Review
+
+Findings are reviewed for completeness, accuracy, and architectural alignment. The synthesis captures the implications for the foundation.
+
+**Output:** Synthesis document identifying implications and options.
+
+### 4. Authorize
+
+The architectural decision is formalized as an ADR. The decision captures the context, drivers, considered alternatives, and consequences.
+
+**Output:** Architectural Decision Record (ADR).
+
+### 5. Formalize
+
+The concept, relationship, assertion, or other semantic artifact is formalized with its definition, specification, and constraints.
+
+**Output:** Formal specification (YAML, JSON-LD, RDF, OWL as appropriate).
+
+### 6. Publish
+
+The formalized artifact is published in the appropriate repository. Status transitions to **Baseline**.
+
+**Output:** Published semantic asset in canonical repository.
+
+### 7. Specialize
+
+Downstream contexts may specialize the artifact for their domain. Specializations identify the parent, preserve inherited meaning, declare added constraints.
+
+**Output:** Specialized semantic assets in downstream repositories.
+
+### 8. Instantiate
+
+Concrete instances are created — entities, events, states, assertions that reference the semantic concepts.
+
+**Output:** Entity instances and assertions in example/modeling repositories.
+
+### 9. Assert
+
+Claims about the world are made as semantic assertions. Each assertion carries subject, relationship, object, context, provenance, and optional evidence.
+
+**Output:** Semantic assertions about instances.
+
+### 10. Evidence
+
+Assertions may be supported by evidence — observations, measurements, documents, records, test results, derived evidence.
+
+**Output:** Evidence references attached to assertions.
+
+### 11. Validate
+
+Assertions, specializations, and representations are validated against semantic constraints. Conformance is verified.
+
+**Output:** Validation results (passed / failed with reasons).
+
+### 12. Govern
+
+Semantic artifacts are governed through their lifecycle — status updates, deprecation, retirement, replacement.
+
+**Output:** Governance actions recorded.
+
+### 13. Version / Deprecate
+
+Semantic artifacts evolve. Versioning records the evolution. Deprecation signals that the artifact is no longer recommended for new use. Retirement preserves historical interpretability.
+
+**Output:** Version updates, deprecation notices, retirement records.
 
 ---
 
-## Implementation Gate
+## Lifecycle Properties
 
-Per ADR-WSF-17:
+The lifecycle has these properties:
 
-> **No implementation shall be interpreted as automatically creating a normative semantic decision.**
-
-A successful Implementation does NOT make the underlying decision Normative. Normativity is granted through:
-- Successful Validation
-- Explicit acceptance by governance authority
-- Status transition per the Semantic Status Model
-
----
-
-## Lifecycle Tracing
-
-Each artifact in WSF should trace back through:
-
-```
-Artifact (in implementation)
-   ↓ traces to
-Repository Artifact
-   ↓ traces to
-CR (Implementation)
-   ↓ traces to
-ADR (Architectural Decision)
-   ↓ traces to
-Synthesis
-   ↓ traces to
-Findings (F-NNN)
-   ↓ traces to
-Investigation
-```
-
-This traceability is itself a governance asset.
+- **Mandatory**: Every semantic change passes through the lifecycle.
+- **Traced**: Every change traces back to documented investigation.
+- **Reviewable**: Every stage is reviewable by appropriate authorities.
+- **Reversible**: Deprecation and retirement preserve historical interpretability.
+- **Auditable**: The lifecycle produces an auditable trail.
 
 ---
 
-## Re-entry
+## What the Lifecycle Does NOT Do
 
-The lifecycle is NOT strictly one-way. An artifact may re-enter earlier stages:
-- **Release → Investigation**: If a normative artifact needs revision, new investigation begins
-- **Normative → Deprecated**: Through the Semantic Status Model
-- **Implementation → CR**: If implementation issues are found, a new CR is created
+The lifecycle is not:
 
-Re-entry is governed by the ADR/CR process, not by informal decision.
-
----
-
-## Example Lifecycle
-
-```
-Day 0:   Investigation: "What is the semantic distinction between Entity and Concept?"
-Day 14:  Finding F-345: Entity ≠ Concept
-Day 30:  Synthesis: Foundational Ontology Investigation
-Day 60:  ADR-WSF-XX: Foundational Concept Ontology
-Day 75:  CR-WSF-XX: Implement Entity/Concept distinction in wsf/
-Day 90:  Implementation: concepts/entity.md, concepts/concept.md
-Day 100: Validation: acceptance criteria met
-Day 105: Release: tag v0.1.0, status: Normative
-```
+- A bureaucratic process — it is the governed path for semantic evolution.
+- A blocker — it accelerates changes by providing clear governance.
+- A one-time check — it applies throughout the artifact's life.
+- A substitute for semantic judgment — it supports human governance.
 
 ---
 
-*This lifecycle is established per CR-WSF-17 Rev.1 §13. Refinements are made through the ADR process.*
+## Related Documents
+
+- [SEMANTIC-STATUS-MODEL.md](./SEMANTIC-STATUS-MODEL.md) — The 6-stage status model
+- [../ADR/](../ADR/) — Architectural Decision Records
+- [../CR/](../CR/) — Change Requests
+- [../../RESEARCH/INVESTIGATION-RECORD.md](../RESEARCH/INVESTIGATION-RECORD.md) — Investigation record
+
+---
+
+*The Change Control Lifecycle is the governed path for semantic evolution.*

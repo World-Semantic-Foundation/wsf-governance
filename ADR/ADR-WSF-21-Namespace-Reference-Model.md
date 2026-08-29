@@ -1,11 +1,11 @@
 # ADR-WSF-21 — Namespace and Reference Model
 
-Status: Proposed
+Status: Baseline
 Program: World Semantic Foundation
 Parent: ADR-WSF-20 — Concept Definition Model
 Related: ADR-WSF-01, ADR-WSF-18, ADR-WSF-19, ADR-WSF-20, ADR-WSF-23
 Decision Type: Foundational Semantic Architecture
-Implementation: Authorized upon Acceptance (via subsequent CRs)
+Implementation: Implemented by the corresponding change request
 
 ---
 
@@ -29,7 +29,7 @@ The Namespace Model therefore:
 
 ## 2. Why This Decision Is Necessary
 
-WSF needs to:
+WSF:
 
 1. **Reference any concept** from anywhere — global resolution required.
 2. **Distinguish namespaces** — different authorities, different scopes.

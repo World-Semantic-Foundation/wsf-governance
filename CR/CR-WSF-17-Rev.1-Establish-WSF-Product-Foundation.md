@@ -4,7 +4,7 @@ Below is the formal revised version.
 
 CR-WSF-17 Rev. 1 — Establish WSF Product Foundation
 
-Status: Proposed
+Status: Baseline
 Revision: 1
 Type: Foundational Program Implementation
 Implements: ADR-WSF-17 — Foundational Semantic Architecture
