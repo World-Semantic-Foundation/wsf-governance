@@ -1,6 +1,6 @@
 # Architectural Decision Records (ADRs)
 
-> **The 17 ADRs that constitute WSF's architectural foundation.**
+> **The 18 ADRs that constitute WSF's architectural foundation.**
 
 All ADRs are immutable historical records once Accepted. Changes occur through subsequent ADRs, not by modifying existing ones. Each ADR implements the [8-stage change control lifecycle](../GOVERNANCE/CHANGE-CONTROL-LIFECYCLE.md).
 
@@ -27,6 +27,7 @@ All ADRs are immutable historical records once Accepted. Changes occur through s
 | [ADR-WSF-15](./ADR-WSF-15-Semantic-Authority-Governance.md) | Semantic Authority & Governance | Proposed | 2026-08-29 |
 | [ADR-WSF-16](./ADR-WSF-16-Semantic-Evolution-Versioning.md) | Semantic Evolution & Versioning | Proposed | 2026-08-29 |
 | [ADR-WSF-17](./ADR-WSF-17-Foundational-Semantic-Architecture.md) | Foundational Semantic Architecture | **Accepted** | 2026-08-29 |
+| [ADR-WSF-18](./ADR-WSF-18-Concept-Identity.md) | Concept Identity | **Proposed** | 2026-08-29 |
 
 ---
 
@@ -66,6 +67,26 @@ ADR-WSF-15  Semantic Authority & Governance   (Governance)
 ADR-WSF-16  Semantic Evolution & Versioning   (Evolution)
    ↓
 ADR-WSF-17  Foundational Semantic Architecture (Implementation Gate) ★ ACCEPTED
+   ↓
+ADR-WSF-18  Concept Identity                   (Identity Foundation) ★ NEW
+   ↓
+ADR-WSF-19  Semantic Relationship Model        (Relationship Grammar)
+   ↓
+ADR-WSF-20  Concept Definition Model           (Formal Specification)
+   ↓
+ADR-WSF-21  Namespace & Reference Model        (Identifier Scheme)
+   ↓
+ADR-WSF-22  Assertion & Provenance Model       (Assertion Support)
+   ↓
+ADR-WSF-23  Semantic Representation Architecture (Format Strategy)
+   ↓
+ADR-WSF-24  WSF Software Architecture          (Engine Design)
+   ↓
+ADR-WSF-25  WSF Integration Architecture       (Connector Design)
+   ↓
+ADR-WSF-26  WSF Visualization Architecture     (Visual Asset Design)
+   ↓
+ADR-WSF-27  WSF Digital Twin & Simulation Architecture (Realization Design)
 ```
 
 ---
@@ -83,6 +104,7 @@ ADR-WSF-17  Foundational Semantic Architecture (Implementation Gate) ★ ACCEPTE
 | **Assertion Model & Validation** | ADR-WSF-12, ADR-WSF-13 |
 | **Context & Governance** | ADR-WSF-14, ADR-WSF-15 |
 | **Evolution & Architecture** | ADR-WSF-16, ADR-WSF-17 |
+| **Identity Foundation** | ADR-WSF-18 (NEW) |
 
 ---
 
