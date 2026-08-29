@@ -1,6 +1,6 @@
 # Architectural Decision Records (ADRs)
 
-> **The 18 ADRs that constitute WSF's architectural foundation.**
+> **The 22 ADRs that constitute WSF's architectural foundation.**
 
 All ADRs are immutable historical records once Accepted. Changes occur through subsequent ADRs, not by modifying existing ones. Each ADR implements the [8-stage change control lifecycle](../GOVERNANCE/CHANGE-CONTROL-LIFECYCLE.md).
 
@@ -28,6 +28,10 @@ All ADRs are immutable historical records once Accepted. Changes occur through s
 | [ADR-WSF-16](./ADR-WSF-16-Semantic-Evolution-Versioning.md) | Semantic Evolution & Versioning | Proposed | 2026-08-29 |
 | [ADR-WSF-17](./ADR-WSF-17-Foundational-Semantic-Architecture.md) | Foundational Semantic Architecture | **Accepted** | 2026-08-29 |
 | [ADR-WSF-18](./ADR-WSF-18-Concept-Identity.md) | Concept Identity | **Proposed** | 2026-08-29 |
+| [ADR-WSF-19](./ADR-WSF-19-Semantic-Relationship-Model.md) | Semantic Relationship Model | **Proposed** | 2026-08-29 |
+| [ADR-WSF-20](./ADR-WSF-20-Concept-Definition-Model.md) | Concept Definition Model | **Proposed** | 2026-08-29 |
+| [ADR-WSF-21](./ADR-WSF-21-Namespace-Reference-Model.md) | Namespace & Reference Model | **Proposed** | 2026-08-29 |
+| [ADR-WSF-22](./ADR-WSF-22-Assertion-Provenance-Model.md) | Assertion & Provenance Model | **Proposed** | 2026-08-29 |
 
 ---
 
@@ -104,7 +108,11 @@ ADR-WSF-27  WSF Digital Twin & Simulation Architecture (Realization Design)
 | **Assertion Model & Validation** | ADR-WSF-12, ADR-WSF-13 |
 | **Context & Governance** | ADR-WSF-14, ADR-WSF-15 |
 | **Evolution & Architecture** | ADR-WSF-16, ADR-WSF-17 |
-| **Identity Foundation** | ADR-WSF-18 (NEW) |
+| **Identity Foundation** | ADR-WSF-18 |
+| **Relationship Model** | ADR-WSF-19 (NEW) |
+| **Concept Definition** | ADR-WSF-20 (NEW) |
+| **Namespace & Reference** | ADR-WSF-21 (NEW) |
+| **Assertion & Provenance** | ADR-WSF-22 (NEW) |
 
 ---
 
