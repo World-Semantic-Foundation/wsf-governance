@@ -1,6 +1,6 @@
 # Architectural Decision Records (ADRs)
 
-> **The 22 architectural decision records that constitute the WSF architectural foundation.**
+> **The 27 architectural decision records that constitute the WSF architectural foundation.**
 
 Each ADR documents an architectural decision in the World Semantic Foundation. ADRs are immutable historical records once finalized; changes occur through subsequent ADRs.
 
@@ -34,6 +34,11 @@ The full architectural lineage is preserved through the investigation record.
 | [ADR-WSF-20](./ADR-WSF-20-Concept-Definition-Model.md) | Concept Definition Model | Baseline |
 | [ADR-WSF-21](./ADR-WSF-21-Namespace-Reference-Model.md) | Namespace & Reference Model | Baseline |
 | [ADR-WSF-22](./ADR-WSF-22-Assertion-Provenance-Model.md) | Assertion & Provenance Model | Baseline |
+| [ADR-WSF-23](./ADR-WSF-23-Semantic-Representation-Architecture.md) | Semantic Representation Architecture | Baseline |
+| [ADR-WSF-24](./ADR-WSF-24-WSF-Software-Architecture.md) | WSF Software Architecture | Baseline |
+| [ADR-WSF-25](./ADR-WSF-25-WSF-Integration-Architecture.md) | WSF Integration Architecture | Baseline |
+| [ADR-WSF-26](./ADR-WSF-26-WSF-Visualization-Architecture.md) | WSF Visualization Architecture | Baseline |
+| [ADR-WSF-27](./ADR-WSF-27-WSF-Digital-Twin-and-Simulation-Architecture.md) | WSF Digital Twin and Simulation Architecture | Baseline |
 
 ---
 
@@ -52,7 +57,7 @@ ADR-WSF-05  Semantic Assertion                 (Claims)
    ↓
 ADR-WSF-06  Evidence & Provenance              (Support)
    ↓
-ADR-WSF-07  Capacity–Ability–Capability        (Disposition)
+ADR-WSF-07  Capacity:Ability:Capability       (Disposition)
    ↓
 ADR-WSF-08  Foundational Concept Relationships (Grammar)
    ↓
@@ -115,6 +120,11 @@ ADR-WSF-27  WSF Digital Twin & Simulation Architecture (Realization Design)
 | **Concept Definition** | ADR-WSF-20 |
 | **Namespace & Reference** | ADR-WSF-21 |
 | **Assertion & Provenance** | ADR-WSF-22 |
+| **Representation Architecture** | ADR-WSF-23 |
+| **Software Architecture** | ADR-WSF-24 |
+| **Integration Architecture** | ADR-WSF-25 |
+| **Visualization Architecture** | ADR-WSF-26 |
+| **Digital Twin & Simulation Architecture** | ADR-WSF-27 |
 
 ---
 
