@@ -1,7 +1,7 @@
 # Architectural Decision Records (ADRs)
 
-> **The 28 architectural decision records that constitute the WSF architectural foundation.**
-> Per ADR-WSF-29 (in PR #1), ADRs are organised into five categories: Foundational, Implementation, Domain Extension, Governance, Convention. ADR-WSF-30 (this PR) is the first dependent ADR within the Ecosystem domain extension.
+> **The 30 architectural decision records that constitute the WSF architectural foundation.**
+> Per ADR-WSF-29, ADRs are organised into five categories: Foundational, Implementation, Domain Extension, Governance, Convention.
 
 Each ADR documents an architectural decision in the World Semantic Foundation. ADRs are immutable historical records once finalized; changes occur through subsequent ADRs.
 
@@ -40,7 +40,9 @@ The full architectural lineage is preserved through the investigation record.
 | [ADR-WSF-25](./ADR-WSF-25-WSF-Integration-Architecture.md) | WSF Integration Architecture | Baseline |
 | [ADR-WSF-26](./ADR-WSF-26-WSF-Visualization-Architecture.md) | WSF Visualization Architecture | Baseline |
 | [ADR-WSF-27](./ADR-WSF-27-WSF-Digital-Twin-and-Simulation-Architecture.md) | WSF Digital Twin and Simulation Architecture | Baseline |
-| [ADR-WSF-30](./ADR-WSF-30-Ecosystem-Actor-Taxonomy.md) | Ecosystem Actor Taxonomy | Proposed (Pre-Baseline) |
+| [ADR-WSF-28](./ADR-WSF-28-Ecosystem-as-Tier-3-Worked-Example.md) | Ecosystem as Tier 3 Worked Example | Proposed |
+| [ADR-WSF-29](./ADR-WSF-29-Domain-Extension-Numbering-and-Categorisation-Convention.md) | Domain-Extension Numbering and Categorisation Convention | Proposed |
+| [ADR-WSF-30](./ADR-WSF-30-Ecosystem-Actor-Taxonomy.md) | Ecosystem Actor Taxonomy | Proposed |
 
 ---
 
@@ -101,7 +103,11 @@ ADR-WSF-26  WSF Visualization Architecture      (Visual Asset Design)
    ↓
 ADR-WSF-27  WSF Digital Twin & Simulation Architecture (Realization Design)
    ↓
-ADR-WSF-30  Ecosystem Actor Taxonomy                (Domain Extension: Ecosystem, Actor dimension; Pre-Baseline)
+ADR-WSF-28  Ecosystem as Tier 3 Worked Example         (Domain Extension: Ecosystem)
+   ↓
+ADR-WSF-29  Domain-Extension Numbering & Categorisation Convention (Convention)
+   ↓
+ADR-WSF-30  Ecosystem Actor Taxonomy                (Domain Extension: Ecosystem, Actor dimension)
 ```
 
 ---
@@ -129,6 +135,8 @@ ADR-WSF-30  Ecosystem Actor Taxonomy                (Domain Extension: Ecosystem
 | **Integration Architecture** | ADR-WSF-25 |
 | **Visualization Architecture** | ADR-WSF-26 |
 | **Digital Twin & Simulation Architecture** | ADR-WSF-27 |
+| **Domain Extension: Ecosystem** | ADR-WSF-28 |
+| **Domain-Extension Numbering Convention** | ADR-WSF-29 |
 | **Domain Extension: Ecosystem (Actor Taxonomy)** | ADR-WSF-30 |
 
 ---
