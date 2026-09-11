@@ -1,25 +1,28 @@
 # ADR-WSF-30: Ecosystem Actor Taxonomy
 
-> **Status:** Proposed (Pre-Baseline)
+> **Status:** Proposed
 > **Decision Type:** Domain Extension (actor taxonomy specialisation)
 > **Scope:** Ecosystem domain actor roles
 > **Supersedes:** None
 > **Depends On:** ADR-WSF-28, ADR-WSF-20, ADR-WSF-04, ADR-WSF-09
 > **Related:** ADR-WSF-29 (Domain-Extension Numbering and Categorisation Convention)
-> **Paired submission:** This ADR is filed in a Draft PR. Its parent (ADR-WSF-28) is at status Proposed in PR #1. The transition of this ADR to Baseline is contingent on the transition of ADR-WSF-28 to Baseline.
+> **Paired submission:** This ADR was filed as a Draft PR alongside its parent (ADR-WSF-28). ADR-WSF-28 has reached Baseline (PR #1 merged 2026-09-11). The §0 Pre-Baseline caveat is now historical; see §0.1 for the transition record.
 
 ---
 
-## 0. Pre-Baseline caveat
+## 0. Pre-Baseline caveat (historical)
 
-This ADR is filed as a Draft PR. Its parent decision, ADR-WSF-28 (Ecosystem as Tier 3 Worked Example), is at status **Proposed** in PR #1 (`wsf-governance#1`) awaiting review. Per the Semantic Status Model and ADR-WSF-17, an ADR reaches **Baseline** only after the ADR has been reviewed and accepted by the governance process. Until ADR-WSF-28 reaches Baseline, this ADR is grounded in a non-ratified parent.
+This ADR was originally filed as a Draft PR with a Pre-Baseline caveat citing its parent (ADR-WSF-28) at status Proposed in PR #1. The convention established by ADR-WSF-29 permits this filing pattern: paired or chained submissions may be filed together so reviewers can evaluate the dependency in a single review window.
 
-The convention established by ADR-WSF-29 permits this filing pattern: paired or chained submissions may be filed together so reviewers can evaluate the dependency in a single review window. This ADR therefore:
+## 0.1 Status transition record
 
-1. Cites ADR-WSF-28 as a **Proposed (Pre-Baseline)** parent, not as a ratified one.
-2. Is filed as a **Draft PR** so it does not enter the merge queue automatically.
-3. Documents, in §1 Context, the precise condition under which this ADR transitions to Baseline: ADR-WSF-28 reaching Baseline in `wsf-governance`.
-4. Will be re-evaluated for revision if ADR-WSF-28's review surfaces changes that affect the actor taxonomy (e.g., a namespace convention shift, a worked-example designation revision, or a parent reassignment).
+| Date | Event | Status |
+|---|---|---|
+| 2026-09-11 (filing) | Draft PR opened | Proposed (Pre-Baseline) |
+| 2026-09-11 | ADR-WSF-28 merged via PR #1, reached Baseline | Proposed (parent Baseline) |
+| 2026-09-11 | PR #2 reopened and marked ready for review | Proposed (under review) |
+
+ADR-WSF-28 reached Baseline on 2026-09-11 without surfacing changes that affect the actor taxonomy (no namespace shift, no worked-example designation revision, no parent reassignment). The Pre-Baseline caveat is therefore cleared. This ADR is now at status **Proposed**, awaiting governance review for transition to Baseline.
 
 ## 1. Context
 
