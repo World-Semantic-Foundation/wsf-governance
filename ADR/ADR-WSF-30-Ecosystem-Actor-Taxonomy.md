@@ -1,12 +1,13 @@
 # ADR-WSF-30: Ecosystem Actor Taxonomy
 
-> **Status:** Proposed
+> **Status:** Baseline
 > **Decision Type:** Domain Extension (actor taxonomy specialisation)
 > **Scope:** Ecosystem domain actor roles
 > **Supersedes:** None
 > **Depends On:** ADR-WSF-28, ADR-WSF-20, ADR-WSF-04, ADR-WSF-09
 > **Related:** ADR-WSF-29 (Domain-Extension Numbering and Categorisation Convention)
 > **Paired submission:** This ADR was filed as a Draft PR alongside its parent (ADR-WSF-28). ADR-WSF-28 has reached Baseline (PR #1 merged 2026-09-11). The §0 Pre-Baseline caveat is now historical; see §0.1 for the transition record.
+> **Transition record (2026-09-13):** ADR-WSF-30 reaches Baseline as of the merge of PR #4. Parent ADR-WSF-28 was already Baseline. The §0 Pre-Baseline caveat (which referenced the unratified state of this ADR's parents) is now fully historical. The §0.1 transition record was inserted to preserve the audit trail.
 
 ---
 
@@ -250,4 +251,4 @@ The following actions are required at the next revision cycle. They are not part
 
 ---
 
-*This ADR establishes the Ecosystem domain actor taxonomy. Its transition to Baseline is contingent on ADR-WSF-28 reaching Baseline.*
+*This ADR establishes the Ecosystem domain actor taxonomy. It reached Baseline on 2026-09-13 via PR #4 (parent ADR-WSF-28 was Baseline at that point).*
