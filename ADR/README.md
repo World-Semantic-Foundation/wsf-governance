@@ -42,7 +42,7 @@ The full architectural lineage is preserved through the investigation record.
 | [ADR-WSF-27](./ADR-WSF-27-WSF-Digital-Twin-and-Simulation-Architecture.md) | WSF Digital Twin and Simulation Architecture | Baseline |
 | [ADR-WSF-28](./ADR-WSF-28-Ecosystem-as-Tier-3-Worked-Example.md) | Ecosystem as Tier 3 Worked Example | Proposed |
 | [ADR-WSF-29](./ADR-WSF-29-Domain-Extension-Numbering-and-Categorisation-Convention.md) | Domain-Extension Numbering and Categorisation Convention | Proposed |
-| [ADR-WSF-30](./ADR-WSF-30-Ecosystem-Actor-Taxonomy.md) | Ecosystem Actor Taxonomy | Proposed |
+| [ADR-WSF-30](./ADR-WSF-30-Ecosystem-Actor-Taxonomy.md) | Ecosystem Actor Taxonomy | Baseline |
 
 ---
 
@@ -107,7 +107,7 @@ ADR-WSF-28  Ecosystem as Tier 3 Worked Example         (Domain Extension: Ecosys
    ↓
 ADR-WSF-29  Domain-Extension Numbering & Categorisation Convention (Convention)
    ↓
-ADR-WSF-30  Ecosystem Actor Taxonomy                (Domain Extension: Ecosystem, Actor dimension)
+ADR-WSF-30  Ecosystem Actor Taxonomy                (Domain Extension: Ecosystem, Actor dimension; Baseline)
 ```
 
 ---
@@ -137,7 +137,7 @@ ADR-WSF-30  Ecosystem Actor Taxonomy                (Domain Extension: Ecosystem
 | **Digital Twin & Simulation Architecture** | ADR-WSF-27 |
 | **Domain Extension: Ecosystem** | ADR-WSF-28 |
 | **Domain-Extension Numbering Convention** | ADR-WSF-29 |
-| **Domain Extension: Ecosystem (Actor Taxonomy)** | ADR-WSF-30 |
+| **Domain Extension: Ecosystem (Actor Taxonomy; Baseline)** | ADR-WSF-30 |
 
 ---
 
