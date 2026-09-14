@@ -1,6 +1,6 @@
 # Architectural Decision Records (ADRs)
 
-> **The 30 architectural decision records that constitute the WSF architectural foundation.**
+> **The 31 architectural decision records that constitute the WSF architectural foundation.**
 > Per ADR-WSF-29, ADRs are organised into five categories: Foundational, Implementation, Domain Extension, Governance, Convention.
 
 Each ADR documents an architectural decision in the World Semantic Foundation. ADRs are immutable historical records once finalized; changes occur through subsequent ADRs.
@@ -42,6 +42,7 @@ The full architectural lineage is preserved through the investigation record.
 | [ADR-WSF-27](./ADR-WSF-27-WSF-Digital-Twin-and-Simulation-Architecture.md) | WSF Digital Twin and Simulation Architecture | Baseline |
 | [ADR-WSF-28](./ADR-WSF-28-Ecosystem-as-Tier-3-Worked-Example.md) | Ecosystem as Tier 3 Worked Example | Proposed |
 | [ADR-WSF-29](./ADR-WSF-29-Domain-Extension-Numbering-and-Categorisation-Convention.md) | Domain-Extension Numbering and Categorisation Convention | Proposed |
+| [ADR-WSF-30](./ADR-WSF-30-Ecosystem-Actor-Taxonomy.md) | Ecosystem Actor Taxonomy | Baseline |
 | [ADR-WSF-33](./ADR-WSF-33-Ecosystem-Lifecycle-and-Health.md) | Ecosystem Lifecycle and Health | Proposed (Pre-Baseline) |
 
 ---
@@ -107,6 +108,8 @@ ADR-WSF-28  Ecosystem as Tier 3 Worked Example         (Domain Extension: Ecosys
    ↓
 ADR-WSF-29  Domain-Extension Numbering & Categorisation Convention (Convention)
    ↓
+ADR-WSF-30  Ecosystem Actor Taxonomy                (Domain Extension: Ecosystem, Actor dimension; Baseline)
+   ↓
 ADR-WSF-33  Ecosystem Lifecycle and Health          (Domain Extension: Ecosystem, Lifecycle and Health; Pre-Baseline)
 ```
 
@@ -137,7 +140,7 @@ ADR-WSF-33  Ecosystem Lifecycle and Health          (Domain Extension: Ecosystem
 | **Digital Twin & Simulation Architecture** | ADR-WSF-27 |
 | **Domain Extension: Ecosystem** | ADR-WSF-28 |
 | **Domain-Extension Numbering Convention** | ADR-WSF-29 |
-| **Domain Extension: Ecosystem (Lifecycle and Health)** | ADR-WSF-33 |
+| **Domain Extension: Ecosystem (Lifecycle and Health; Pre-Baseline)** | ADR-WSF-33 |
 
 ---
 
