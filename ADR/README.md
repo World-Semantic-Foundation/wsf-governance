@@ -1,6 +1,6 @@
 # Architectural Decision Records (ADRs)
 
-> **The 30 architectural decision records that constitute the WSF architectural foundation.**
+> **The 31 architectural decision records that constitute the WSF architectural foundation.**
 > Per ADR-WSF-29, ADRs are organised into five categories: Foundational, Implementation, Domain Extension, Governance, Convention.
 
 Each ADR documents an architectural decision in the World Semantic Foundation. ADRs are immutable historical records once finalized; changes occur through subsequent ADRs.
@@ -43,6 +43,7 @@ The full architectural lineage is preserved through the investigation record.
 | [ADR-WSF-28](./ADR-WSF-28-Ecosystem-as-Tier-3-Worked-Example.md) | Ecosystem as Tier 3 Worked Example | Proposed |
 | [ADR-WSF-29](./ADR-WSF-29-Domain-Extension-Numbering-and-Categorisation-Convention.md) | Domain-Extension Numbering and Categorisation Convention | Proposed |
 | [ADR-WSF-30](./ADR-WSF-30-Ecosystem-Actor-Taxonomy.md) | Ecosystem Actor Taxonomy | Baseline |
+| [ADR-WSF-31](./ADR-WSF-31-Ecosystem-Value-Dynamics.md) | Ecosystem Value Dynamics | Proposed |
 
 ---
 
@@ -108,6 +109,8 @@ ADR-WSF-28  Ecosystem as Tier 3 Worked Example         (Domain Extension: Ecosys
 ADR-WSF-29  Domain-Extension Numbering & Categorisation Convention (Convention)
    ↓
 ADR-WSF-30  Ecosystem Actor Taxonomy                (Domain Extension: Ecosystem, Actor dimension; Baseline)
+   ↓
+ADR-WSF-31  Ecosystem Value Dynamics                 (Domain Extension: Ecosystem, Value Dynamics; Proposed)
 ```
 
 ---
@@ -138,6 +141,7 @@ ADR-WSF-30  Ecosystem Actor Taxonomy                (Domain Extension: Ecosystem
 | **Domain Extension: Ecosystem** | ADR-WSF-28 |
 | **Domain-Extension Numbering Convention** | ADR-WSF-29 |
 | **Domain Extension: Ecosystem (Actor Taxonomy; Baseline)** | ADR-WSF-30 |
+| **Domain Extension: Ecosystem (Value Dynamics; Proposed)** | ADR-WSF-31 |
 
 ---
 
