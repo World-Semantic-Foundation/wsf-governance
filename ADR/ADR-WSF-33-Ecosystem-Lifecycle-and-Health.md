@@ -6,20 +6,35 @@
 > **Supersedes:** None
 > **Depends On:** ADR-WSF-28, ADR-WSF-30, ADR-WSF-31, ADR-WSF-32, ADR-WSF-20, ADR-WSF-04, ADR-WSF-09, ADR-WSF-17
 > **Related:** ADR-WSF-29 (Domain-Extension Numbering and Categorisation Convention)
-> **Paired submission:** This ADR is filed in a Draft PR. Its parents (ADR-WSF-30 and ADR-WSF-31) are at status Proposed in PR #4 and PR #5 respectively. ADR-WSF-32 (also a parent) is at status Proposed in PR #6. The transition of this ADR to Baseline is contingent on ADR-WSF-30 and ADR-WSF-31 reaching Baseline. ADR-WSF-32 is a structural grounding parent and is required for the health-metrics vocabulary to be applicable.
+> **Paired submission:** This ADR is filed in a Draft PR. One parent (ADR-WSF-30) has reached Baseline as of 2026-09-13; ADR-WSF-31 and ADR-WSF-32 (also parents) remain at status Proposed in PR #5 and PR #6 respectively, currently in review. The transition of this ADR to Baseline remains contingent on ADR-WSF-31 and ADR-WSF-32 reaching Baseline. The section 0 Pre-Baseline caveat is partially cleared; see section 0.1 for the transition record.
 
 ---
 
-## 0. Pre-Baseline caveat
+## 0. Pre-Baseline caveat (partially cleared)
 
-This ADR is filed as a Draft PR. Its parent decisions are:
+This ADR was originally filed as a Draft PR with a Pre-Baseline caveat citing its parents (ADR-WSF-28, ADR-WSF-30, ADR-WSF-31, ADR-WSF-32). The convention established by ADR-WSF-29 permits this filing pattern: paired or chained submissions may be filed together so reviewers can evaluate the dependency in a single review window. As of 2026-09-13, the caveat is partially cleared: ADR-WSF-28 and ADR-WSF-30 have reached Baseline, but ADR-WSF-31 and ADR-WSF-32 remain at status Proposed.
+
+## 0.1 Status transition record (partial)
+
+| Date | Event | Status |
+|---|---|---|
+| 2026-09-12 (filing) | Draft PR opened on branch `adr-33-lifecycle-health` | Proposed (Pre-Baseline) |
+| 2026-09-11 | ADR-WSF-28 already Baseline (PR #1 merged 2026-09-11) | Proposed (one parent Baseline) |
+| 2026-09-13 | ADR-WSF-30 merged via PR #4, reached Baseline | Proposed (Pre-Baseline; two parents still Proposed) |
+| 2026-09-14 | Section 0 caveat partially cleared: ADR-WSF-28 and ADR-WSF-30 marked Baseline in the parent table | Proposed (Pre-Baseline; ADR-WSF-31, ADR-WSF-32 still Proposed) |
+| (pending) | ADR-WSF-31 merged via PR #5 (currently in review) | Proposed (Pre-Baseline; ADR-WSF-32 still Proposed) |
+| (pending) | ADR-WSF-32 merged via PR #6 (currently in review) | Proposed (under review; all parents Baseline) |
+
+ADR-WSF-30 reached Baseline on 2026-09-13 without surfacing changes that affect the lifecycle or health vocabulary. The Pre-Baseline caveat is partially cleared (parents ADR-WSF-28 and ADR-WSF-30 are Baseline). This ADR remains at status **Proposed (Pre-Baseline)** until ADR-WSF-31 and ADR-WSF-32 reach Baseline. The section 0 caveat table below records the current state.
+
+## 0.2 Current parent status
 
 | Parent | Status | Location |
 |---|---|---|
 | ADR-WSF-28 (Ecosystem as Tier 3 Worked Example) | Baseline | merged via PR #1 |
-| ADR-WSF-30 (Ecosystem Actor Taxonomy) | Proposed | PR #4 (ready for review) |
-| ADR-WSF-31 (Ecosystem Value Dynamics) | Proposed | PR #5 (Draft, Pre-Baseline) |
-| ADR-WSF-32 (Ecosystem Structural Primitives) | Proposed | PR #6 (Draft, Pre-Baseline) |
+| ADR-WSF-30 (Ecosystem Actor Taxonomy) | Baseline | merged via PR #4 |
+| ADR-WSF-31 (Ecosystem Value Dynamics) | Proposed | PR #5 (in review) |
+| ADR-WSF-32 (Ecosystem Structural Primitives) | Proposed | PR #6 (in review) |
 
 The natural-language dependency chain is:
 
@@ -35,16 +50,14 @@ ADR-WSF-28 (Ecosystem as Tier 3 Worked Example, parent)
             +-- ADR-WSF-33 (Lifecycle and Health, derived)   <-- THIS ADR
 ```
 
-Per the Semantic Status Model and ADR-WSF-17, an ADR reaches Baseline only after governance review. Until its parents reach Baseline, this ADR is grounded in non-ratified parents.
+Per the Semantic Status Model and ADR-WSF-17, an ADR reaches Baseline only after governance review. Until ADR-WSF-31 and ADR-WSF-32 reach Baseline, this ADR is grounded in non-ratified parents.
 
 The convention established by ADR-WSF-29 permits this filing pattern. This ADR:
 
-1. Cites all parents as **Proposed** or **Baseline**, with ADR-WSF-30, -31, -32 still pre-ratification.
+1. Cites all parents with their current status (Baseline or Proposed), with ADR-WSF-31 and ADR-WSF-32 still pre-ratification.
 2. Is filed as a **Draft PR**.
-3. Documents, in §1 Context, the precise conditions under which this ADR transitions to Baseline.
-4. Will be re-evaluated for revision if any parent's review surfaces changes that affect the lifecycle or health vocabulary.
-
-## 1. Context
+3. Documents, in section 1 Context, the precise conditions under which this ADR transitions to Baseline.
+4. Will be re-evaluated for revision if any parent's review surfaces changes that affect the lifecycle or health vocabulary.## 1. Context
 
 ADR-WSF-28 establishes the Ecosystem domain as a governed WSF extension. ADR-WSF-30, -31, -32 establish the actor taxonomy, value dynamics, and structural primitives. This ADR completes the Ecosystem domain by establishing:
 
