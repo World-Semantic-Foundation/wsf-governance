@@ -108,6 +108,8 @@ ADR-WSF-28  Ecosystem as Tier 3 Worked Example         (Domain Extension: Ecosys
    ↓
 ADR-WSF-29  Domain-Extension Numbering & Categorisation Convention (Convention)
    ↓
+ADR-WSF-30  Ecosystem Actor Taxonomy                (Domain Extension: Ecosystem, Actor dimension; Baseline)
+   ↓
 ADR-WSF-31  Ecosystem Value Dynamics                 (Domain Extension: Ecosystem, Value Dynamics; Proposed)
 ```
 
