@@ -140,6 +140,7 @@ ADR-WSF-33  Ecosystem Lifecycle and Health          (Domain Extension: Ecosystem
 | **Digital Twin & Simulation Architecture** | ADR-WSF-27 |
 | **Domain Extension: Ecosystem** | ADR-WSF-28 |
 | **Domain-Extension Numbering Convention** | ADR-WSF-29 |
+| **Domain Extension: Ecosystem (Actor Taxonomy; Baseline)** | ADR-WSF-30 |
 | **Domain Extension: Ecosystem (Lifecycle and Health; Pre-Baseline)** | ADR-WSF-33 |
 
 ---
