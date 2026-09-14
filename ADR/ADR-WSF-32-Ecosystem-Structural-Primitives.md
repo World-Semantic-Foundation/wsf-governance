@@ -1,34 +1,31 @@
 # ADR-WSF-32: Ecosystem Structural Primitives
 
-> **Status:** Proposed (Pre-Baseline)
+> **Status:** Proposed
 > **Decision Type:** Domain Extension (structural primitives specialisation)
 > **Scope:** Ecosystem domain structural primitives (Platform, Boundary Resources, Modularity, Interoperability Standards, Coupling Level, Marketplace)
 > **Supersedes:** None
 > **Depends On:** ADR-WSF-28, ADR-WSF-30, ADR-WSF-20, ADR-WSF-04, ADR-WSF-09
 > **Related:** ADR-WSF-29 (Domain-Extension Numbering and Categorisation Convention), ADR-WSF-31 (Ecosystem Value Dynamics)
-> **Paired submission:** This ADR is filed in a Draft PR. Its parents (ADR-WSF-28 and ADR-WSF-30) are at status Baseline (PR #1) and Proposed (PR #4, awaiting review) respectively. The transition of this ADR to Baseline is contingent on ADR-WSF-30 reaching Baseline.
+> **Paired submission:** This ADR was filed in a Draft PR alongside its parents (ADR-WSF-28 and ADR-WSF-30). Both parents have reached Baseline: ADR-WSF-28 was merged via PR #1 on 2026-09-11; ADR-WSF-30 was merged via PR #4 on 2026-09-13. The section 0 Pre-Baseline caveat is now fully historical; see section 0.1 for the transition record.
 
 ---
 
-## 0. Pre-Baseline caveat
+## 0. Pre-Baseline caveat (historical)
 
-This ADR is filed as a Draft PR. Its parent decisions are:
+This ADR was originally filed as a Draft PR with a Pre-Baseline caveat citing its parents (ADR-WSF-28 and ADR-WSF-30) at status Proposed. The convention established by ADR-WSF-29 permits this filing pattern: paired or chained submissions may be filed together so reviewers can evaluate the dependency in a single review window.
 
-| Parent | Status | Location |
+## 0.1 Status transition record
+
+| Date | Event | Status |
 |---|---|---|
-| ADR-WSF-28 (Ecosystem as Tier 3 Worked Example) | Baseline | merged via PR #1 |
-| ADR-WSF-30 (Ecosystem Actor Taxonomy) | Proposed | PR #4 (ready for review) |
+| 2026-09-12 (filing) | Draft PR opened on branch `adr-32-structural-primitives` | Proposed (Pre-Baseline) |
+| 2026-09-12 | ADR-WSF-28 already Baseline (PR #1 merged 2026-09-11) | Proposed (one parent Baseline, one Proposed) |
+| 2026-09-13 | ADR-WSF-30 merged via PR #4, reached Baseline | Proposed (parents all Baseline) |
+| 2026-09-14 | Section 0 caveat cleared; status updated to `Proposed`; PR #6 marked ready for review | Proposed (under review) |
 
-Per the Semantic Status Model and ADR-WSF-17, an ADR reaches Baseline only after governance review. Until ADR-WSF-30 reaches Baseline, this ADR is grounded in a non-ratified parent.
+ADR-WSF-30 reached Baseline on 2026-09-13 without surfacing changes that affect the structural primitives (no re-parenting of `wsf:Platform`, no Boundary Resources modelling revision, no structural vocabulary change). The Pre-Baseline caveat is therefore cleared. This ADR is now at status **Proposed**, awaiting governance review for transition to Baseline.
 
-The convention established by ADR-WSF-29 permits this filing pattern. This ADR:
-
-1. Cites both parents as **Proposed** or **Baseline**, with ADR-WSF-30 still pre-ratification.
-2. Is filed as a **Draft PR**.
-3. Documents, in §1 Context, the precise conditions under which this ADR transitions to Baseline.
-4. Will be re-evaluated for revision if ADR-WSF-30's review surfaces changes that affect the structural primitives (e.g., a re-parenting of `wsf:Platform`, a change to the Boundary Resources modelling).
-
-## 1. Context
+## 1. Context## 1. Context
 
 ADR-WSF-28 establishes the Ecosystem domain as a governed WSF extension. ADR-WSF-30 establishes six Tier 3 actor concepts (Orchestrator, Complementor, Dominator, Gatekeeper, Prosumer, Boundary Spanner) and the Overlapping Roles principle. The structural primitives vocabulary captures the substrate on which ecosystem interactions occur.
 
