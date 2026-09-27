@@ -1,6 +1,6 @@
 # ADR-WSF-28: Ecosystem as Tier 3 Worked Example
 
-> **Status:** Proposed
+> **Status:** Baseline
 > **Decision Type:** Domain Extension (foundational domain specialisation)
 > **Scope:** Ecosystem domain (business ecosystems, digital ecosystems, platform ecosystems)
 > **Supersedes:** None
@@ -263,3 +263,13 @@ This ADR establishes the Ecosystem domain within WSF. Implementation proceeds th
 ---
 
 *This ADR establishes the Ecosystem domain within the World Semantic Foundation. Implementation proceeds through subsequent CRs and dependent ADRs.*
+
+---
+
+## Baseline Promotion Metadata
+
+- promotion_date: 2026-09-26
+- promotion_trigger: Change Control Lifecycle Stage 6 (Publish) ; implementation evidence present in wsf-ecosystem repo (Tier 3 concepts, worked examples, relationships)
+- prior_status: Proposed
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+- downstream_unblocked: ES-029 (Agentic Ecosystem) dependency gate now satisfiable (wsf:Ecosystem = Baseline)

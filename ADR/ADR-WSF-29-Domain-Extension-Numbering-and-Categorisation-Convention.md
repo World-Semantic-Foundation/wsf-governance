@@ -1,6 +1,6 @@
 # ADR-WSF-29: Domain-Extension Numbering and Categorisation Convention
 
-> **Status:** Proposed
+> **Status:** Baseline
 > **Decision Type:** Governance convention
 > **Scope:** All future ADRs and CRs in the World Semantic Foundation
 > **Supersedes:** None
@@ -146,3 +146,13 @@ The following actions are required at the next revision cycle. They are not part
 ---
 
 *This ADR establishes the Domain-Extension Numbering and Categorisation Convention. The convention is in force from the moment of acceptance.*
+
+---
+
+## Baseline Promotion Metadata
+
+- promotion_date: 2026-09-26
+- promotion_trigger: Change Control Lifecycle Stage 6 (Publish) ; implementation evidence present in wsf-ecosystem repo (Tier 3 concepts, worked examples, relationships)
+- prior_status: Proposed
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+- downstream_unblocked: ES-029 (Agentic Ecosystem) dependency gate now satisfiable (wsf:Ecosystem = Baseline)
