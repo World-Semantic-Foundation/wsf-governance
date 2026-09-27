@@ -1,7 +1,7 @@
 ---
 adr-id: ADR-WSF-35
 title: Service Semantic Grounding (ES Integration)
-status: proposed
+status: baseline
 date: 2026-09-26
 deciders: eaojnr
 related-adrs: [ADR-WSF-33, ADR-WSF-34, ADR-WSF-17]
@@ -72,3 +72,13 @@ Filed at Proposed ; promoted to Baseline upon publication per the Change Control
 ## Author
 
 Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+
+---
+
+## Baseline Promotion Metadata
+
+- promotion_date: 2026-09-26
+- promotion_trigger: Change Control Lifecycle Stage 6 (Publish) ; wsf:Service already Tier 3 Baseline in wsf-spec vocabulary (confirmed 2026-09-26)
+- prior_status: Proposed
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+- downstream_unblocked: ES integration ADR/CR pairs (ES-031 Service, ES-032 Product) + retroactive satisfaction of ES-014/015/016/017 dependency gates

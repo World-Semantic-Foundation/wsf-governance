@@ -1,7 +1,7 @@
 ---
 cr-id: CR-WSF-35
 title: Service Grounding Implementation (ES Integration)
-status: proposed
+status: baseline
 date: 2026-09-26
 implements: ADR-WSF-35
 related-crs: [CR-WSF-33, CR-WSF-34]
@@ -32,3 +32,13 @@ Implement ADR-WSF-35: formalize wsf:Service as the governed authoritative founda
 ## Author
 
 Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+
+---
+
+## Baseline Promotion Metadata
+
+- promotion_date: 2026-09-26
+- promotion_trigger: Change Control Lifecycle Stage 6 (Publish) ; wsf:Service vocabulary declaration confirmed
+- prior_status: Proposed
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+- downstream_unblocked: ES integration ADR/CR pairs (ES-031 Service, ES-032 Product) + retroactive satisfaction of ES-014/015/016/017 dependency gates
