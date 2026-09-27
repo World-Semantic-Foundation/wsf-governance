@@ -2,7 +2,7 @@
 # Change Request : frontmatter
 cr-id: CR-WSF-34
 title: System Validation and Regrounding Implementation (ES Integration)
-status: proposed
+status: baseline
 date: 2026-09-26
 implements: ADR-WSF-34
 related-adrs:
@@ -157,6 +157,15 @@ The CR is complete when:
 - Related findings: F-042
 - Related phases: 1.4
 - ES-side counterparts: ES-CR-027 (slot 0037), ES-ADR-025
+
+## Promotion Metadata
+
+- promotion_date: 2026-09-26
+- promotion_trigger: Change Control Lifecycle Stage 6 (Publish)
+- promotion_basis: WSF-ES alignment artefacts published to canonical repository
+- promotion_ritual: Status: proposed -> baseline
+- prior_status: proposed
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 
 ## Author
 

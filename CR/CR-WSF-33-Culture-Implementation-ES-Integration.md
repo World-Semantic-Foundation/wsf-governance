@@ -2,7 +2,7 @@
 # Change Request : frontmatter
 cr-id: CR-WSF-33
 title: Culture Implementation in WSF (ES Integration)
-status: proposed
+status: baseline
 date: 2026-09-26
 implements: ADR-WSF-33
 related-adrs:
@@ -146,6 +146,15 @@ The CR is complete when:
 - Related findings: F-042 (WSA/WSF boundary)
 - Related phases: 1.4 (Definition System)
 - ES-side counterparts: ES-CR-026 (slot 0036), ES-ADR-023 + ES-ADR-024
+
+## Promotion Metadata
+
+- promotion_date: 2026-09-26
+- promotion_trigger: Change Control Lifecycle Stage 6 (Publish)
+- promotion_basis: WSF-ES alignment artefacts published to canonical repository
+- promotion_ritual: Status: proposed -> baseline
+- prior_status: proposed
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 
 ## Author
 

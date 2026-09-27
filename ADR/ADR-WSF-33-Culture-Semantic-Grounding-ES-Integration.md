@@ -2,7 +2,7 @@
 # Architecture Decision Record : frontmatter
 adr-id: ADR-WSF-33
 title: Culture Semantic Grounding (ES Integration)
-status: proposed
+status: baseline
 date: 2026-09-26
 deciders:
   - Emmanuel A. Otchere
@@ -188,6 +188,15 @@ A conformant WSF Culture implementation must demonstrate:
 - Related CRs: WSF-CR-CULTURE-001 (Culture Implementation in WSF)
 - Related phases: 1.4 (Definition System)
 - ES-side counterparts: ES-ADR-026 (slot 0030), ES-CR-026 (slot 0036), ES-ADR-023 + ES-ADR-024
+
+## Promotion Metadata
+
+- promotion_date: 2026-09-26
+- promotion_trigger: Change Control Lifecycle Stage 6 (Publish)
+- promotion_basis: WSF-ES alignment artefacts published to canonical repository
+- promotion_ritual: Status: proposed -> baseline
+- prior_status: proposed
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 
 ## Author
 

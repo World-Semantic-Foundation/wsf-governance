@@ -2,7 +2,7 @@
 # Architecture Decision Record : frontmatter
 adr-id: ADR-WSF-34
 title: System Semantic Validation and Regrounding (ES Integration)
-status: proposed
+status: baseline
 date: 2026-09-26
 deciders:
   - Emmanuel A. Otchere
@@ -220,6 +220,15 @@ The System implementation must demonstrate:
 - Related CRs: WSF-CR-SYSTEM-001
 - Related phases: 1.4
 - ES-side counterparts: ES-ADR-027 (slot 0031), ES-CR-027 (slot 0037), ES-ADR-025
+
+## Promotion Metadata
+
+- promotion_date: 2026-09-26
+- promotion_trigger: Change Control Lifecycle Stage 6 (Publish)
+- promotion_basis: WSF-ES alignment artefacts published to canonical repository
+- promotion_ritual: Status: proposed -> baseline
+- prior_status: proposed
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 
 ## Author
 
