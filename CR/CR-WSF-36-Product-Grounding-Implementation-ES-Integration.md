@@ -1,7 +1,7 @@
 ---
 cr-id: CR-WSF-36
 title: Product Grounding Implementation (ES Integration)
-status: proposed
+status: baseline
 date: 2026-09-26
 implements: ADR-WSF-36
 related-crs: [CR-WSF-33, CR-WSF-34, CR-WSF-35]
@@ -33,3 +33,13 @@ Implement ADR-WSF-36: add wsf:Product to the WSF vocabulary and formalize it as 
 ## Author
 
 Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+
+---
+
+## Baseline Promotion Metadata
+
+- promotion_date: 2026-09-26
+- promotion_trigger: Change Control Lifecycle Stage 6 (Publish) ; wsf:Product vocabulary landed (wsf-spec PR #1 MERGED)
+- prior_status: Proposed
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+- downstream_unblocked: ES integration ADR/CR pairs (ES-031 Service, ES-032 Product) + retroactive satisfaction of ES-014/015/016/017 dependency gates
