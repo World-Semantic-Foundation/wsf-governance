@@ -1,6 +1,6 @@
 # ADR-WSF-32: Ecosystem Structural Primitives
 
-> **Status:** Proposed
+> **Status:** Baseline
 > **Decision Type:** Domain Extension (structural primitives specialisation)
 > **Scope:** Ecosystem domain structural primitives (Platform, Boundary Resources, Modularity, Interoperability Standards, Coupling Level, Marketplace)
 > **Supersedes:** None
@@ -247,3 +247,12 @@ This ADR is filed as a Draft PR. Its transition to Baseline is contingent on ADR
 ---
 
 *This ADR establishes the Ecosystem domain structural primitives. Its transition to Baseline is contingent on ADR-WSF-30 reaching Baseline.*
+
+---
+
+## Baseline Promotion Metadata
+
+- promotion_date: 2026-09-26
+- promotion_trigger: Change Control Lifecycle Stage 6 (Publish) ; implementation evidence present in wsf-ecosystem repo (structural primitives: boundary-resources, boundary-spanner, complementor, dominator, coupling-level, decision-rights-allocation) ; relational properties documented in concepts/relationships/
+- prior_status: Proposed
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)

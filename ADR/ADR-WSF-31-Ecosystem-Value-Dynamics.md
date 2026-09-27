@@ -1,6 +1,6 @@
 # ADR-WSF-31: Ecosystem Value Dynamics
 
-> **Status:** Proposed
+> **Status:** Baseline
 > **Decision Type:** Domain Extension (value-dynamics specialisation)
 > **Scope:** Ecosystem domain value dynamics, network effects, value flow, exit friction
 > **Supersedes:** None
@@ -35,7 +35,7 @@ The vocabulary surfaced by the source literature splits naturally into three lay
 
 1. **Phenomena:** Network Effects (with Direct and Indirect subtypes), Value Co-creation, Value Exchange, Value Slippage, Switching Costs, Lock-In.
 2. **Compositional structure:** Network Effects are emergent properties of the actor network, not attributes of any single actor. Lock-In is an emergent state produced by switching costs combined with network effects. Value Slippage is an occurrence by which value escapes capture.
-3. **Modelling rules:** The relational property `exhibits` attaches Network Effects to the actor network (not to a single actor). The composition of switching costs + network effects → Lock-In is captured as a derived state in the inference engine, per CR-WSF-17 Rev.1 §17.
+3. **Modelling rules:** The relational property `exhibits` attaches Network Effects to the actor network (not to a single actor). The composition of switching costs + network effects -> Lock-In is captured as a derived state in the inference engine, per CR-WSF-17 Rev.1 §17.
 
 This ADR establishes eight Tier 3 specialisations across the value-dynamics domain. Seven parented to Tier 1 primitives; one (Network Effect) parented to `wsf:Disposition` and further specialised into Direct and Indirect subtypes. Two modelling decisions are documented as applied intelligence: Network Effect as `Disposition` of the actor network (not as actor attribute), and Lock-In as emergent state (not as mechanism).
 
@@ -297,3 +297,12 @@ The following actions are required at the next revision cycle. They are not part
 ---
 
 *This ADR establishes the Ecosystem domain value-dynamics vocabulary. Its transition to Baseline is contingent on ADR-WSF-28 and ADR-WSF-30 reaching Baseline.*
+
+---
+
+## Baseline Promotion Metadata
+
+- promotion_date: 2026-09-26
+- promotion_trigger: Change Control Lifecycle Stage 6 (Publish) ; implementation evidence present in wsf-ecosystem repo (27 Tier 3 concept docs including value-dynamics concepts: direct-network-effect, coopetition, value flows) ; root Ecosystem ADR-WSF-28 at Baseline
+- prior_status: Proposed
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
