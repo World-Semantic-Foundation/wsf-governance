@@ -1,6 +1,6 @@
 # ADR-WSF-38 ; Closed Loop Semantic Grounding ; Tier 3 Baseline
 
-**Status:** Proposed
+**Status:** Baseline
 **Date:** 2026-09-27
 **Deciders:** eaojnr
 **Phase:** Tier 3 ; Foundational
@@ -44,6 +44,14 @@ Closed Loop does not require AI. An AI closed loop is a Closed Loop with AI real
 ## 5. Specialization Discipline
 
 Any specialization of Closed Loop MUST reference wsf:ClosedLoop as the parent. The Autonomous Closed Loop candidate (CR-ES-022 section 4) gates on this ADR landing at Baseline.
+
+## Baseline Promotion Metadata
+
+- promotion_date: 2026-09-27
+- promotion_trigger: wsf-spec PR #2 MERGED (; enables ES-035 integration pair)
+- prior_status: Proposed
+- final_status: Baseline
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 
 ## Author
 

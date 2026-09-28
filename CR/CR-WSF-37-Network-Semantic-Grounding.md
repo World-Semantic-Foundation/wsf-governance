@@ -1,6 +1,6 @@
 # CR-WSF-37 ; Network Semantic Grounding Implementation
 
-**Status:** Proposed
+**Status:** Baseline
 **Date:** 2026-09-27
 **Implements:** ADR-WSF-37
 **Authority:** WSF
@@ -24,6 +24,14 @@ Resolved at filing: this ADR introduces the foundation.
 1. Turtle parses (additive-only diff)
 2. ES integration pair on main
 3. Concept repo + kit + conformance per ES-030
+
+## Baseline Promotion Metadata
+
+- promotion_date: 2026-09-27
+- promotion_trigger: wsf-spec PR #2 MERGED (;; CR complete)
+- prior_status: Proposed
+- final_status: Baseline
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 
 ## Author
 
