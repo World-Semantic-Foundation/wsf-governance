@@ -1,6 +1,6 @@
 # ADR-WSF-37 ; Network Semantic Grounding ; Tier 3 Baseline
 
-**Status:** Proposed
+**Status:** Baseline
 **Date:** 2026-09-27
 **Deciders:** eaojnr
 **Phase:** Tier 3 ; Foundational (with `Specialization` uses)
@@ -50,6 +50,14 @@ Network does not require AI. An AI network is a Network with AI nodes/links, not
 ## 6. Resolution Path
 
 The Agentic Network and Autonomous Network candidates (CR-ES-022 section 4) gate on this ADR landing at Baseline.
+
+## Baseline Promotion Metadata
+
+- promotion_date: 2026-09-27
+- promotion_trigger: wsf-spec PR #2 MERGED (; enables ES-034 integration pair)
+- prior_status: Proposed
+- final_status: Baseline
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 
 ## Author
 
