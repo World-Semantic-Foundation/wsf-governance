@@ -1,6 +1,6 @@
 # ADR-WSF-37 ; Network Semantic Grounding ; Tier 3 Baseline
 
-**Status:** Baseline
+**Status:** Deprecated
 **Date:** 2026-09-27
 **Deciders:** eaojnr
 **Phase:** Tier 3 ; Foundational (with `Specialization` uses)
@@ -62,3 +62,31 @@ The Agentic Network and Autonomous Network candidates (CR-ES-022 section 4) gate
 ## Author
 
 Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+
+## Demotion Notice ; 2026-09-28
+
+**Status change:** Baseline -> Deprecated
+
+**Trigger:** per user-authoritative model (2026-09-28), Network is realized as two
+ES-canonical concepts (ES-031 Agentic Network + ES-032 Autonomous
+Network). WSF retains wsf:Entity as the generic foundation. Network is
+no longer Tier 3 Baseline at WSF ;;; it is ES-side canonical
+specialization. This ADR is Deprecated and remains as a historical
+decision record. ES-031/032 are the canonical places.
+
+**Cross-program impact:**
+- ES-031 (Agentic Network) remains canonical specialization of ES:CONCEPT:network (ES-side)
+- ES-032 (Autonomous Network) remains canonical specialization of ES:CONCEPT:network (ES-side)
+- ES-034 (Closed Loop) remains canonical behavioral_pattern (ES-side)
+- ES-035 (Autonomous Closed Loop) remains canonical behavioral_pattern_specialization (ES-side)
+- WSF wsf-vocabulary.ttl demotes wsf:Network + wsf:ClosedLoop (Tier 3 Baseline -> removed)
+- WSF retains wsf:Entity as the generic foundation for Network specialization
+- WSF minimal kernel unchanged
+
+**Author:** Emmanuel A. Otchere (cardinal user-authoritative model, 2026-09-28)
+
+**Cross-references:**
+- ADR-WSF-17 Foundational Semantic Architecture (kernel unchanged)
+- ADR-WSF-19 Semantic Relationship Model (specializes+of preserved)
+- ES-031 / ES-032 / ES-034 / ES-035 (canonical at ES)
+- authority-chain.md (cross-program authority chain)

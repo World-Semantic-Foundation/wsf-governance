@@ -1,6 +1,6 @@
 # ADR-WSF-38 ; Closed Loop Semantic Grounding ; Tier 3 Baseline
 
-**Status:** Baseline
+**Status:** Deprecated
 **Date:** 2026-09-27
 **Deciders:** eaojnr
 **Phase:** Tier 3 ; Foundational
@@ -56,3 +56,31 @@ Any specialization of Closed Loop MUST reference wsf:ClosedLoop as the parent. T
 ## Author
 
 Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+
+## Demotion Notice ; 2026-09-28
+
+**Status change:** Baseline -> Deprecated
+
+**Trigger:** per user-authoritative model (2026-09-28), Closed Loop is realized as
+ES-canonical behavioral_pattern (ES-034) + ES-canonical behavioral_pattern
+specialization (ES-035 Autonomous Closed Loop). WSF retains the minimal
+kernel only. Closed Loop is no longer Tier 3 Baseline at WSF ;;; it is
+ES-side behavioral pattern. This ADR is Deprecated and remains as a
+historical decision record. ES-034/035 are the canonical places.
+
+**Cross-program impact:**
+- ES-031 (Agentic Network) remains canonical specialization of ES:CONCEPT:network (ES-side)
+- ES-032 (Autonomous Network) remains canonical specialization of ES:CONCEPT:network (ES-side)
+- ES-034 (Closed Loop) remains canonical behavioral_pattern (ES-side)
+- ES-035 (Autonomous Closed Loop) remains canonical behavioral_pattern_specialization (ES-side)
+- WSF wsf-vocabulary.ttl demotes wsf:Network + wsf:ClosedLoop (Tier 3 Baseline -> removed)
+- WSF retains wsf:Entity as the generic foundation for Network specialization
+- WSF minimal kernel unchanged
+
+**Author:** Emmanuel A. Otchere (cardinal user-authoritative model, 2026-09-28)
+
+**Cross-references:**
+- ADR-WSF-17 Foundational Semantic Architecture (kernel unchanged)
+- ADR-WSF-19 Semantic Relationship Model (specializes+of preserved)
+- ES-031 / ES-032 / ES-034 / ES-035 (canonical at ES)
+- authority-chain.md (cross-program authority chain)
