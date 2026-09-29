@@ -219,9 +219,9 @@ Per ADR-WSF-16, semantic versioning records the evolution of a semantic definiti
 Example:
 ```
 wsf:Capability
-   Version 1.0.0 — initial normative
-   Version 1.1.0 — added clarification (identity persists)
-   Version 2.0.0 — breaking change (identity persists with v2 mark, v1 deprecated)
+   Version 1.0.0: initial normative
+   Version 1.1.0: added clarification (identity persists)
+   Version 2.0.0: breaking change (identity persists with v2 mark, v1 deprecated)
 ```
 
 ---

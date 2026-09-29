@@ -64,7 +64,7 @@ Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 **Trigger:** per user-authoritative model (2026-09-28), Closed Loop is realized as
 ES-canonical behavioral_pattern (ES-034) + ES-canonical behavioral_pattern
 specialization (ES-035 Autonomous Closed Loop). WSF retains the minimal
-kernel only. Closed Loop is no longer Tier 3 Baseline at WSF ;;; it is
+kernel only. Closed Loop is no longer Tier 3 Baseline at WSF, it is
 ES-side behavioral pattern. This ADR is Deprecated and remains as a
 historical decision record. ES-034/035 are the canonical places.
 

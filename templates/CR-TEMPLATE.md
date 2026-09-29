@@ -143,7 +143,7 @@ related:
 tags: []
 ---
 
-# CR-WSF-XX — <Title>
+# CR-WSF-XX: <Title>
 
 ## 1. Change Request
 

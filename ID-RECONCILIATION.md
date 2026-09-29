@@ -4,7 +4,7 @@
 
 ## Status
 
-Established ;;; machine-readable + human-readable identity reconciliation between canonical sequential IDs and subject-namespace aliases.
+Established. Machine-readable + human-readable identity reconciliation between canonical sequential IDs and subject-namespace aliases.
 
 ## Author
 
@@ -14,8 +14,8 @@ Emmanuel A. Otchere (cardinal user-authoritative model, 2026-09-28)
 
 WSF governance uses two parallel identifier systems:
 
-1. **Canonical sequential IDs** ;;; ADR-WSF-NNN (e.g. ADR-WSF-33) and CR-WSF-NNN (e.g. CR-WSF-33). These are the primary references and authoritative identifiers.
-2. **Subject-namespace aliases** ;;; WSF-ADR-<SUBJECT>-<LOCAL> (e.g. WSF-ADR-CULTURE-001) and WSF-CR-<SUBJECT>-<LOCAL>. These were introduced for cross-program traceability when ES-integration tranches were filed.
+1. **Canonical sequential IDs**. ADR-WSF-NNN (e.g. ADR-WSF-33) and CR-WSF-NNN (e.g. CR-WSF-33). These are the primary references and authoritative identifiers.
+2. **Subject-namespace aliases**. WSF-ADR-<SUBJECT>-<LOCAL> (e.g. WSF-ADR-CULTURE-001) and WSF-CR-<SUBJECT>-<LOCAL>. These were introduced for cross-program traceability when ES-integration tranches were filed.
 
 Per LOCKED-PICKS v9 §313-318, subject-namespace IDs are aliases for github.com canonical sequential IDs. The two systems are reconciled below.
 
@@ -59,14 +59,14 @@ See id-aliases.yaml (companion file) for the machine-readable reconciliation tab
 
 ## Deprecation note
 
-ADR-WSF-37 + ADR-WSF-38 (Network + Closed Loop) and their companion CRs were Deprecated on 2026-09-28 per the user-authoritative model. Their subject-namespace aliases are retained for historical traceability ;;; resolution to canonical still works ;;; canonical status is Deprecated.
+ADR-WSF-37 + ADR-WSF-38 (Network + Closed Loop) and their companion CRs were Deprecated on 2026-09-28 per the user-authoritative model. Their subject-namespace aliases are retained for historical traceability. Resolution to canonical still works. Canonical status is Deprecated.
 
 ## Cross-program impact
 
-- ES side: ES-026/027/029/030/031-SVC/032-PRD are the canonical integrations ;;; cross-program traceability preserved via subject-namespace aliases on the WSF side.
-- ES-031/032/034/035 are ES-side canonical realizations ;;; their WSF aliases (WSF-ADR-NETWORK-001 + WSF-ADR-CLOSED-LOOP-001) are Deprecated ;;; ES-side identifiers are primary.
+- ES side: ES-026/027/029/030/031-SVC/032-PRD are the canonical integrations. Cross-program traceability preserved via subject-namespace aliases on the WSF side.
+- ES-031/032/034/035 are ES-side canonical realizations. Their WSF aliases (WSF-ADR-NETWORK-001 + WSF-ADR-CLOSED-LOOP-001) are Deprecated. ES-side identifiers are primary.
 - The compound ID convention (ES-031-SVC + ES-032-PRD) is documented in enterprise-semantics/authority-chain.md.
 
 ## Update history
 
-- 2026-09-28 ;;; Initial reconciliation established per LOCKED-PICKS v9 §313-318 + user-authoritative model. Author: Emmanuel A. Otchere (cardinal user-authoritative model, 2026-09-28)
+- 2026-09-28. Initial reconciliation established per LOCKED-PICKS v9 §313-318 + user-authoritative model. Author: Emmanuel A. Otchere (cardinal user-authoritative model, 2026-09-28)

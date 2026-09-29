@@ -41,7 +41,7 @@ Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 
 **Status change:** Baseline -> Deprecated
 
-**Trigger:** Companion CR to the deprecated ADR-WSF-37. Per user-authoritative model (2026-09-28), Network is realized as ES-side canonical. The CR implementation remains as a historical implementation record ;;; ES-side canonical concepts (ES-031/032/034/035) are the canonical places.
+**Trigger:** Companion CR to the deprecated ADR-WSF-37. Per user-authoritative model (2026-09-28), Network is realized as ES-side canonical. The CR implementation remains as a historical implementation record. ES-side canonical concepts (ES-031/032/034/035) are the canonical places.
 
 **Cross-program impact:**
 - ES-031/032 + ES-034/035 are the canonical ES-side realizations

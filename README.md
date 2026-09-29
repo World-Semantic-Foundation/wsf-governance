@@ -109,12 +109,12 @@ The governance operates under these architectural principles (full list in [12 F
 
 WSF governance uses two parallel identifier systems:
 
-- Canonical sequential IDs: ADR-WSF-NNN (e.g. ADR-WSF-33) ;;; primary references
-- Subject-namespace aliases: WSF-ADR-<SUBJECT>-<LOCAL> (e.g. WSF-ADR-CULTURE-001) ;;; cross-program traceability aliases
+- Canonical sequential IDs: ADR-WSF-NNN (e.g. ADR-WSF-33), primary references
+- Subject-namespace aliases: WSF-ADR-<SUBJECT>-<LOCAL> (e.g. WSF-ADR-CULTURE-001). Cross-program traceability aliases
 
 Per LOCKED-PICKS v9 §313-318, subject-namespace aliases resolve to canonical sequential IDs. See:
 
-- ID-RECONCILIATION.md ;;; human-readable reconciliation
-- id-aliases.yaml ;;; machine-readable mapping table
+- ID-RECONCILIATION.md, human-readable reconciliation
+- id-aliases.yaml, machine-readable mapping table
 
 Author: Emmanuel A. Otchere (cardinal user-authoritative model, 2026-09-28)

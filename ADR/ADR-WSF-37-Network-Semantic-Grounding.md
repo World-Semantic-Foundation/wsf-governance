@@ -70,7 +70,7 @@ Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 **Trigger:** per user-authoritative model (2026-09-28), Network is realized as two
 ES-canonical concepts (ES-031 Agentic Network + ES-032 Autonomous
 Network). WSF retains wsf:Entity as the generic foundation. Network is
-no longer Tier 3 Baseline at WSF ;;; it is ES-side canonical
+no longer Tier 3 Baseline at WSF, it is ES-side canonical
 specialization. This ADR is Deprecated and remains as a historical
 decision record. ES-031/032 are the canonical places.
 

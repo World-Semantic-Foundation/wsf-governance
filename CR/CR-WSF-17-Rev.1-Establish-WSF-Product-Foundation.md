@@ -12,7 +12,7 @@ Target Organization: World-Semantic-Foundation
 Supersedes: CR-WSF-17
 Scope: World Semantic Foundation inception, semantic assets, executable platform, integration, visualization, and real-world realization
 
-⸻
+: 
 
 1. Change Request
 
@@ -39,7 +39,7 @@ The implementation shall proceed incrementally.
 
 It shall not attempt to finalize the entire world semantic model or implement every possible semantic capability in the initial release.
 
-⸻
+: 
 
 2. Motivation
 
@@ -78,7 +78,7 @@ extended
 
 and ultimately applied to real-world entities, systems, organizations, processes, events and digital twins.
 
-⸻
+: 
 
 3. Architectural Decision Implemented
 
@@ -133,7 +133,7 @@ Authority
 
 Derived concepts shall be introduced through explicit specialization and governance.
 
-⸻
+: 
 
 4. WSF Product Foundation
 
@@ -163,7 +163,7 @@ These are not independent products.
 
 They collectively form the WSF implementation.
 
-⸻
+: 
 
 5. Semantic Foundation
 
@@ -188,7 +188,7 @@ It shall contain:
 
 The Semantic Foundation shall be the normative source from which machine-readable and executable representations are derived.
 
-⸻
+: 
 
 6. Knowledge Assets
 
@@ -219,7 +219,7 @@ why it defines it this way.
 
 The rationale and investigation history are therefore considered first-class program assets.
 
-⸻
+: 
 
 7. Executable Semantic Platform
 
@@ -244,7 +244,7 @@ Conceptually:
 
 The initial implementation shall establish the extensible architecture rather than prematurely mandate a particular storage technology or reasoning engine.
 
-⸻
+: 
 
 8. Semantic Engine Capabilities
 
@@ -302,7 +302,7 @@ Observe
 
 Provide semantic state and event information for downstream applications.
 
-⸻
+: 
 
 9. Platform Neutrality
 
@@ -326,7 +326,7 @@ Technology choices shall implement the semantic architecture; they shall not def
 
 Technology selection shall therefore be handled through subsequent implementation ADRs.
 
-⸻
+: 
 
 10. Integration Foundation
 
@@ -348,7 +348,7 @@ WSF
 
 Integration shall occur through governed semantic interfaces rather than uncontrolled direct coupling.
 
-⸻
+: 
 
 11. OpenDEA Integration
 
@@ -377,7 +377,7 @@ OpenDEA remains an independently governed Enterprise Architecture system.
 
 WSF shall not absorb OpenDEA’s enterprise architecture semantics.
 
-⸻
+: 
 
 12. Assessment-Models Boundary
 
@@ -398,7 +398,7 @@ Assessment-Models remains responsible for its maturity-model ecosystem and inter
 
 WSF shall not become the cardinal governance space for assessments.
 
-⸻
+: 
 
 13. Visualization Foundation
 
@@ -443,7 +443,7 @@ Application Diagrams
 
 Digital twins, simulations, enterprise architecture and agentic applications.
 
-⸻
+: 
 
 14. Visual Asset Repository
 
@@ -463,7 +463,7 @@ Where possible, diagrams should have machine-readable or reproducible source rep
 
 The objective is to make visuals maintainable semantic assets.
 
-⸻
+: 
 
 15. Realization Foundation
 
@@ -481,7 +481,7 @@ Semantic Validation
 
 The purpose is to demonstrate that WSF semantics can describe not merely abstract concepts but actual modeled entities and their changing conditions.
 
-⸻
+: 
 
 16. Digital Twin Application
 
@@ -523,7 +523,7 @@ OTCHERE DC-01
 
 This demonstrates how WSF can provide semantic foundations for digital representations of real-world entities.
 
-⸻
+: 
 
 17. Simulation Application
 
@@ -563,7 +563,7 @@ What did this entity actually do?
 
 This distinction is fundamental for simulation, autonomous systems and digital twins.
 
-⸻
+: 
 
 18. Reference Example Enterprise
 
@@ -595,7 +595,7 @@ The example enterprise name ACME shall not be used in:
 
 This convention should also be respected in downstream work where WSF examples are reused.
 
-⸻
+: 
 
 19. Repository Architecture
 
@@ -646,7 +646,7 @@ Human-readable conceptual and implementation documentation.
 
 Repository names may be refined through implementation ADRs before creation.
 
-⸻
+: 
 
 20. Root README
 
@@ -681,7 +681,7 @@ Finding
 Decision
 Implementation
 
-⸻
+: 
 
 21. Investigation Record
 
@@ -702,7 +702,7 @@ WSF Product Architecture
 
 Research records shall remain distinguishable from normative decisions.
 
-⸻
+: 
 
 22. Governance
 
@@ -740,7 +740,7 @@ Release
 
 No implementation shall be interpreted as automatically creating a normative semantic decision.
 
-⸻
+: 
 
 23. Semantic Lifecycle
 
@@ -755,7 +755,7 @@ Retired
 
 The exact semantics and transition rules shall be established by a subsequent governance ADR.
 
-⸻
+: 
 
 24. Versioning
 
@@ -772,7 +772,7 @@ A fundamental semantic change may require a new identity.
 
 Detailed compatibility and versioning policy shall be established by subsequent ADRs.
 
-⸻
+: 
 
 25. Conformance
 
@@ -792,7 +792,7 @@ Serialization Conformance
 
 Detailed conformance requirements shall be established through subsequent ADRs.
 
-⸻
+: 
 
 26. Deliverables
 
@@ -865,7 +865,7 @@ Realization Assets
 * capability example;
 * simulation example.
 
-⸻
+: 
 
 27. Acceptance Criteria
 
@@ -939,7 +939,7 @@ Example Convention
 * [ ]	Kwesi is used as the canonical example individual.
 * [ ]	No new ACME references exist.
 
-⸻
+: 
 
 28. Explicit Non-Goals
 
@@ -963,7 +963,7 @@ This CR does not:
 
 Those matters remain subject to subsequent architectural decisions.
 
-⸻
+: 
 
 29. Success Condition
 
@@ -997,7 +997,7 @@ REALIZE
 
 without leaving the semantic foundation behind.
 
-⸻
+: 
 
 30. Strategic Outcome
 
@@ -1027,7 +1027,7 @@ This is the principal strategic outcome of CR-WSF-17 Rev. 1.
 
 WSF therefore becomes not simply a repository of definitions, but a semantic foundation capable of supporting actual computational and organizational realization.
 
-⸻
+: 
 
 31. Subsequent Implementation Sequence
 
@@ -1060,7 +1060,7 @@ The existing ADR register shall be reconciled before committing these identifier
 
 Each ADR shall result in one or more traceable implementation CRs.
 
-⸻
+: 
 
 32. Traceability
 
@@ -1096,7 +1096,7 @@ This traceability is itself a WSF governance asset.
 
 It ensures that future users can understand not merely what exists, but why it exists, who decided it, what evidence informed it, how it was implemented, and how it may evolve.
 
-⸻
+: 
 
 33. Final Decision Boundary
 

@@ -225,7 +225,7 @@ Evaluation
 
 Context shall not simply be treated as a generic container for arbitrary metadata.
 
-⸻
+: 
 
 Architectural Boundary
 
@@ -247,7 +247,7 @@ The downstream systems may specialize, constrain, compose, and reuse WSF semanti
 
 They shall not redefine WSF foundational concepts within their own semantic namespace without an explicit governance decision.
 
-⸻
+: 
 
 OpenDEA Boundary
 
@@ -267,7 +267,7 @@ WSF
 
 OpenDEA does not become the authoritative home of the universal concept Capability.
 
-⸻
+: 
 
 Assessment Boundary
 
@@ -292,7 +292,7 @@ The OpenDEA maturity assessment therefore remains an OpenDEA-managed architectur
 
 WSF does not collapse these organizational lifecycles.
 
-⸻
+: 
 
 Consequences
 
@@ -324,7 +324,7 @@ The approach requires:
 
 That complexity is intentional. WSF is being established as authoritative infrastructure, not merely as documentation.
 
-⸻
+: 
 
 Alternatives Rejected
 
@@ -348,7 +348,7 @@ E. Assessment-As-Foundation
 
 Rejected because Assessment-Models represents a separate semantic and governance concern with its own lifecycle.
 
-⸻
+: 
 
 Implementation Implications
 
@@ -369,7 +369,7 @@ WSF Assertion And Provenance Model
 
 The precise numbering can be reconciled against the existing ADR sequence before committing the files, so that we do not accidentally create a numbering collision.
 
-⸻
+: 
 
 Implementation Gate
 
