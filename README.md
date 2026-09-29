@@ -10,21 +10,21 @@ This repository (`wsf-governance/`) contains the governance artifacts of the Wor
 
 ```
 wsf-governance/
-├── README.md                          (this file)
-├── ADR/                               Architectural Decision Records
-│   ├── README.md                      ADR index
-│   └── ADR-WSF-NN-<decision>.md       Individual ADRs
-├── CR/                                Change Requests
-│   ├── README.md                      CR index
-│   └── CR-WSF-NN-<change>.md          Individual CRs
-├── GOVERNANCE/
-│   ├── CHANGE-CONTROL-LIFECYCLE.md    The 8-stage lifecycle
-│   └── SEMANTIC-STATUS-MODEL.md       The 6-stage semantic status
-├── RESEARCH/
-│   └── INVESTIGATION-RECORD.md        The 10 investigations behind the ADRs
-└── templates/
-    ├── ADR-TEMPLATE.md                Template for new ADRs
-    └── CR-TEMPLATE.md                 Template for new CRs
++--- README.md                          (this file)
++--- ADR/                               Architectural Decision Records
+|   +--- README.md                      ADR index
+|   +--- ADR-WSF-NN-<decision>.md       Individual ADRs
++--- CR/                                Change Requests
+|   +--- README.md                      CR index
+|   +--- CR-WSF-NN-<change>.md          Individual CRs
++--- GOVERNANCE/
+|   +--- CHANGE-CONTROL-LIFECYCLE.md    The 8-stage lifecycle
+|   +--- SEMANTIC-STATUS-MODEL.md       The 6-stage semantic status
++--- RESEARCH/
+|   +--- INVESTIGATION-RECORD.md        The 10 investigations behind the ADRs
++--- templates/
+    +--- ADR-TEMPLATE.md                Template for new ADRs
+    +--- CR-TEMPLATE.md                 Template for new CRs
 ```
 
 ---
@@ -37,8 +37,8 @@ The governance layer provides:
 |---|---|
 | **Architectural Decision Records (ADRs)** | Authoritative architectural statements. Each captures context, decision, consequences, and rejected alternatives. |
 | **Change Requests (CRs)** | Implementation change requests. Each implements one or more ADRs with explicit scope. |
-| **Change Control Lifecycle** | The 8-stage process every semantic change goes through: Investigation → Finding → Synthesis → ADR → CR → Implementation → Validation → Release. |
-| **Semantic Status Model** | The 6-stage status of every semantic artifact: Candidate → Investigating → Baseline → Final → Deprecated → Retired. |
+| **Change Control Lifecycle** | The 8-stage process every semantic change goes through: Investigation -> Finding -> Synthesis -> ADR -> CR -> Implementation -> Validation -> Release. |
+| **Semantic Status Model** | The 6-stage status of every semantic artifact: Candidate -> Investigating -> Baseline -> Final -> Deprecated -> Retired. |
 | **Investigation Record** | The 10 investigations that produced the foundational semantic architecture, preserved as historical research lineage. |
 | **Templates** | Standard formats for new ADRs and CRs to ensure consistency. |
 
@@ -59,7 +59,7 @@ The governance layer provides:
 ### To understand the WSF architecture
 
 1. Start with the [ADR README](ADR/README.md) to see the canonical ADR sequence.
-2. Read ADRs in dependency order: 01 → 02 → 03 → ...
+2. Read ADRs in dependency order: 01 -> 02 -> 03 -> ...
 3. Cross-reference with the [Investigation Record](RESEARCH/INVESTIGATION-RECORD.md) for the research lineage.
 
 ### To contribute
@@ -104,3 +104,17 @@ The governance operates under these architectural principles (full list in [12 F
 ---
 
 *The governance provides the authority and lifecycle framework upon which WSF's semantic foundation is built and evolved.*
+
+## Identifier Reconciliation ; 2026-09-28
+
+WSF governance uses two parallel identifier systems:
+
+- Canonical sequential IDs: ADR-WSF-NNN (e.g. ADR-WSF-33) ;;; primary references
+- Subject-namespace aliases: WSF-ADR-<SUBJECT>-<LOCAL> (e.g. WSF-ADR-CULTURE-001) ;;; cross-program traceability aliases
+
+Per LOCKED-PICKS v9 §313-318, subject-namespace aliases resolve to canonical sequential IDs. See:
+
+- ID-RECONCILIATION.md ;;; human-readable reconciliation
+- id-aliases.yaml ;;; machine-readable mapping table
+
+Author: Emmanuel A. Otchere (cardinal user-authoritative model, 2026-09-28)

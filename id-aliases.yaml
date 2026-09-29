@@ -1,0 +1,61 @@
+# id-aliases.yaml ;;; WSF subject-namespace to canonical-sequential ID reconciliation
+# Per LOCKED-PICKS v9 §313-318 ;;; machine-readable mapping
+# Author: Emmanuel A. Otchere (cardinal user-authoritative model, 2026-09-28)
+# Resolution rule: canonical sequential IDs (ADR-WSF-NNN) are authoritative.
+
+canonical_format: ADR-WSF-NNN
+alias_format: WSF-ADR-<SUBJECT>-<LOCAL>
+reconciliation_date: 2026-09-28
+reconciliation_authority: Emmanuel A. Otchere (cardinal user-authoritative model)
+
+adrs:
+  WSF-ADR-CULTURE-001:
+    canonical_id: ADR-WSF-33
+    subject: Culture
+    status: Baseline
+    cross_program_target: ES-026 (WSF Culture integration, Final)
+  WSF-ADR-SYSTEM-001:
+    canonical_id: ADR-WSF-34
+    subject: System
+    status: Baseline
+    cross_program_target: ES-027 (WSF System integration, Final)
+  WSF-ADR-SERVICE-001:
+    canonical_id: ADR-WSF-35
+    subject: Service
+    status: Baseline
+    cross_program_target: ES-031-SVC (WSF Service integration, Accepted, compound ID)
+  WSF-ADR-PRODUCT-001:
+    canonical_id: ADR-WSF-36
+    subject: Product
+    status: Baseline
+    cross_program_target: ES-032-PRD (WSF Product integration, Accepted, compound ID)
+  WSF-ADR-NETWORK-001:
+    canonical_id: ADR-WSF-37
+    subject: Network
+    status: Deprecated
+    deprecated_date: 2026-09-28
+    cross_program_target: ES-031 + ES-032 (Network pair, ES-side canonical, Accepted)
+  WSF-ADR-CLOSED-LOOP-001:
+    canonical_id: ADR-WSF-38
+    subject: Closed Loop
+    status: Deprecated
+    deprecated_date: 2026-09-28
+    cross_program_target: ES-034 + ES-035 (Closed Loop stack, ES-side canonical, Accepted)
+
+crs:
+  WSF-CR-CULTURE-001: CR-WSF-33
+  WSF-CR-SYSTEM-001: CR-WSF-34
+  WSF-CR-SERVICE-001: CR-WSF-35
+  WSF-CR-PRODUCT-001: CR-WSF-36
+  WSF-CR-NETWORK-001: CR-WSF-37
+  WSF-CR-CLOSED-LOOP-001: CR-WSF-38
+
+foundational_no_alias:
+  range: ADR-WSF-17..32
+  rationale: Subject-namespace aliases were introduced starting with ADR-WSF-33 (ES-Integration tranche).
+
+compound_es_ids:
+  ES-031-SVC:
+    meaning: Service integration at slot 0037 ;;; compound ID ;;; preserves ES-031 logical ID
+  ES-032-PRD:
+    meaning: Product integration at slot 0038 ;;; compound ID ;;; preserves ES-032 logical ID
