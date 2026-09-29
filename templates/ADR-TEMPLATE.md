@@ -111,7 +111,7 @@ related:
 tags: [identity, namespace, foundational]
 ---
 
-# ADR-WSF-18 — WSF Concept Identity Model
+# ADR-WSF-18: WSF Concept Identity Model
 
 ## Context
 
@@ -121,7 +121,7 @@ WSF needs a stable, persistent identity model for concepts that survives:
 - Version evolution
 - Specialization
 
-The investigation record (Investigation 6 — Identity–Reference) established that Identity ≠ Identifier ≠ Name ≠ Reference ≠ Representation.
+The investigation record (Investigation 6: Identity-Reference) established that Identity ≠ Identifier ≠ Name ≠ Reference ≠ Representation.
 
 ## Decision
 
@@ -138,7 +138,7 @@ The investigation record (Investigation 6 — Identity–Reference) established 
 ## Cross-References
 
 - ADR-WSF-10: Semantic Identity & Naming
-- Investigation 6 — Identity–Reference
+- Investigation 6: Identity-Reference
 
 ## Lifecycle Status
 
